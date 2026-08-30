@@ -46,7 +46,7 @@ The hardware half: a crowdfunding campaign for the desk the agent sits at.
 
 | | |
 |---|---|
-| What it is | One device, six jobs: TRAE-style agent console (4″ todo/progress panel + physical Approve/Deny permission cards) · smart link (MHS-native) · four-modality detection · edge computing (0.5 TOPS NPU) · 512 GB storage · predictive maintenance |
+| What it is | One device, six jobs: TRAE-style agent console (4″ todo/progress panel + physical Approve/Deny permission cards) · smart link (MHS-native) · four-modality detection · local model (0.5 TOPS NPU — private data computed on-device) · privacy storage (removable encrypted cartridge up to 512 GB, compute-storage separation) · three-class risk prediction (failure · safety · compliance) |
 | Direct device link | Industrial gateway + wireless gateway in one — connects to equipment **directly**: Modbus RTU master (RS-485 multi-drop), Modbus TCP, CAN 2.0B/J1939, OBD-II, BLE 5.2, LoRa 868/915 MHz, 1-Wire |
 | Coverage | Nine equipment domains with fixed compliance boundaries — monitoring only in medical/dental, record-keeping only in fire safety |
 | Status | [Crowdfunding campaign](https://github.com/Hdhaidong/openworker-deck) — [live page](https://hdhaidong.github.io/openworker-deck/) |
@@ -88,7 +88,7 @@ The hardware half: a crowdfunding campaign for the desk the agent sits at.
 
 那项工作的硬件一半：会思考的 Agent，和它坐镇的桌面。
 
-- **一台设备六件事**：TRAE 式 Agent 控制台（4″ todo/进度面板 + 实体批准/拒绝权限卡）· 智能链接（MHS 原生）· 四模态检测 · 边缘计算（0.5 TOPS NPU）· 512GB 存储 · 预测维护
+- **一台设备六件事**：TRAE 式 Agent 控制台（4″ todo/进度面板 + 实体批准/拒绝权限卡）· 智能链接（MHS 原生）· 四模态检测 · 本地模型（0.5 TOPS NPU，个人隐私数据本地计算）· 隐私存储（可拔加密存储卡，最高 512GB，计算存储分离）· 三类风险预测（故障 · 安全 · 合规）
 - **直连设备**：工业网关 + 无线网关一体 —— Modbus RTU 主站（RS-485 多点）· Modbus TCP · CAN/J1939 · OBD-II · BLE 5.2 · LoRa · 1-Wire，直接对话现场设备，无需集成商
 - **九大领域**：家庭 · 庭院 · 户外 · 农业 · 实验室 · 医用 · 私人诊所 · 口腔 · 消防防护 —— 合规边界固定：医疗只监测、消防只记录
 - **状态**：[众筹仓库](https://github.com/Hdhaidong/openworker-deck) · [众筹页面](https://hdhaidong.github.io/openworker-deck/)
