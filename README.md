@@ -8,6 +8,7 @@ Built by **Hdhaidong** on [OpenWorker](https://github.com/andrewyng/openworker) 
 
 [![Agent 1](https://img.shields.io/badge/Agent-Amazon_Product_Scout-blue)](https://github.com/andrewyng/openworker/pull/592)
 [![Agent 2](https://img.shields.io/badge/Agent-Hardware_Repair_Companion-green)](https://github.com/andrewyng/openworker/pull/593)
+[![Hardware](https://img.shields.io/badge/Hardware-OpenWorker_Deck-orange)](https://github.com/Hdhaidong/openworker-deck)
 [![API Keys](https://img.shields.io/badge/API_Keys-Not_Required-brightgreen)]()
 
 </div>
@@ -38,6 +39,17 @@ For home appliances and agricultural machinery: live diagnostics, manuals, parts
 | Principles | Safety is the first gate — licensed-professional work gets recommended, not walked through · hardware writes need explicit approval · telemetry is evidence |
 | Recommended model | Claude |
 | Status | [PR #593](https://github.com/andrewyng/openworker/pull/593) open against upstream |
+
+### Hardware — OpenWorker Deck
+
+The hardware half: a crowdfunding campaign for the desk the agent sits at.
+
+| | |
+|---|---|
+| What it is | One device, six jobs: TRAE-style agent console (4″ todo/progress panel + physical Approve/Deny permission cards) · smart link (MHS-native) · four-modality detection · edge computing (0.5 TOPS NPU) · 512 GB storage · predictive maintenance |
+| Direct device link | Industrial gateway + wireless gateway in one — connects to equipment **directly**: Modbus RTU master (RS-485 multi-drop), Modbus TCP, CAN 2.0B/J1939, OBD-II, BLE 5.2, LoRa 868/915 MHz, 1-Wire |
+| Coverage | Nine equipment domains with fixed compliance boundaries — monitoring only in medical/dental, record-keeping only in fire safety |
+| Status | [Crowdfunding campaign](https://github.com/Hdhaidong/openworker-deck) — [live page](https://hdhaidong.github.io/openworker-deck/) |
 
 ### About the creator
 
@@ -71,6 +83,15 @@ For home appliances and agricultural machinery: live diagnostics, manuals, parts
 - **维护追踪**：设备台账 + 单机维修历史 + 到期简报，修还是换的成本账
 - **推荐模型**：Claude
 - **状态**：[PR #593](https://github.com/andrewyng/openworker/pull/593) 已提交
+
+### 硬件 —— OpenWorker Deck（众筹中）
+
+那项工作的硬件一半：会思考的 Agent，和它坐镇的桌面。
+
+- **一台设备六件事**：TRAE 式 Agent 控制台（4″ todo/进度面板 + 实体批准/拒绝权限卡）· 智能链接（MHS 原生）· 四模态检测 · 边缘计算（0.5 TOPS NPU）· 512GB 存储 · 预测维护
+- **直连设备**：工业网关 + 无线网关一体 —— Modbus RTU 主站（RS-485 多点）· Modbus TCP · CAN/J1939 · OBD-II · BLE 5.2 · LoRa · 1-Wire，直接对话现场设备，无需集成商
+- **九大领域**：家庭 · 庭院 · 户外 · 农业 · 实验室 · 医用 · 私人诊所 · 口腔 · 消防防护 —— 合规边界固定：医疗只监测、消防只记录
+- **状态**：[众筹仓库](https://github.com/Hdhaidong/openworker-deck) · [众筹页面](https://hdhaidong.github.io/openworker-deck/)
 
 ### 关于创作者
 
