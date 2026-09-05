@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { SKILLS } from '~/data/skills'
 useSeoMeta({
-  title: '数字员工控制台',
-  description: 'insightmarketplac Agent 数字员工控制台：QM 多 Agent 框架驱动 11 个数字员工——市场调研、选品、竞品监控、广告、打单、Listing、上架、图片、运营、客服、培训。'
+  title: '我的 Agent 控制台',
+  description: 'insightmarketplac Agent 我的 Agent 控制台：多智能体引擎驱动 11 个Agent——市场调研、选品、竞品监控、广告、打单、Listing、上架、图片、运营、客服、培训。'
 })
 
 type Tpl = { id: string; name: string; desc: string; cost: number; steps: number; kind: string; gate?: string }
@@ -139,7 +139,7 @@ const sbReady = ref(false)
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms))
 
 function stepLines(kind: string): string[] {
-  const base = ['QM · 解析任务意图', '调度数据 Skill 网络', '并行拉取多源数据', '交叉验证与结构化']
+  const base = ['引擎 · 解析任务意图', '调度数据 Skill 网络', '并行拉取多源数据', '交叉验证与结构化']
   const extra: Record<string, string> = {
     research6: ['生成 6 平台对比矩阵', '输出 Go/No-Go 结论'],
     asin: ['反查流量词与竞品池', '生成深度调研报告'],
@@ -203,7 +203,7 @@ function renderResult(kind: string): string {
     case 'sopcourse': return wrap('SOP 课程生成 · 客服岗', k('12 讲', '结构化课程', '含案例') + k('40 题', '考核题库', '单选+情景') + k('85 分', '上岗线', '自动判卷'), tbl(['模块', '课时', '考核点'], [['平台政策与红线', '2 讲', '禁售词/审核流程'], ['邮件回复规范', '3 讲', '响应时限/话术分级'], ['退货纠纷处理', '3 讲', '政策边界/方案选择'], ['差评挽回', '2 讲', '挽回话术/升级条件'], ['系统操作', '2 讲', 'ERP 工单/退款审批']]), '课程已发布企业知识库；新员工完成 12 讲 + 通过考核（85 分）方可上岗处理真实邮件。')
     case 'onboard': return wrap('新人上岗手册 · 运营岗 7 天路径', k('7 天', '上岗周期', '原 14 天') + k('21 项', '检查清单', '逐项签核'), tbl(['天', '任务', '验收'], [['D1', '平台后台权限开通 + 数据看板认读', '看板指标复述'], ['D2-3', '跟岗 Listing 修改与广告调整', '独立完成 3 条 Listing'], ['D4-5', '补货计算与库存巡检', '补货单通过复核'], ['D6', '差评回复与客服升级判断', '模拟考核 85 分'], ['D7', '独立值班', '带教复核签核']]))
     case 'policywk': return wrap('平台政策周报 · 第 37 周', k('6', '政策变更', '本周扫描') + k('2', '高影响项', '需动作'), tbl(['平台', '变更', '影响'], [['Amazon', 'FBA 入仓新增 SKU 条码要求', '10/15 前更新贴标 SOP'], ['Walmart', 'WFS 费率调整（小件下调）', 'PG-CABLE 系列利好，重算定价'], ['Target', '无重大变更', '—'], ['Best Buy', '3C 认证清单更新', '复核 2 个 SKU 资质']]), '培训补充材料已生成 2 份，推送至「运营中心」与「物流部」群，纳入新人考核题库。')
-    default: return wrap('任务完成', k('完成', '执行成功', 'QM Agent'))
+    default: return wrap('任务完成', k('完成', '执行成功', 'Agent 引擎'))
   }
 }
 
@@ -213,7 +213,7 @@ async function runTask(t: Tpl) {
   running.value = true
   resultHtml.value = ''
   needApproval.value = false
-  logLines.value = ['▶ 任务启动：' + t.name, '数字员工：' + activeAgent.value.name + '（' + activeAgent.value.role + '）']
+  logLines.value = ['▶ 任务启动：' + t.name, 'Agent：' + activeAgent.value.name + '（' + activeAgent.value.role + '）']
   const lines = stepLines(t.kind)
   let gateIdx = lines.findIndex(l => l.includes('⚠'))
   for (let i = 0; i < lines.length; i++) {
@@ -275,8 +275,8 @@ const activeSkills = computed(() => SKILLS.filter(s => activeAgent.value.skills.
       <div class="wrap">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:26px">
           <div>
-            <div class="eyebrow" style="margin-bottom:6px">Digital Employee Console · QM Multi-Agent</div>
-            <h1 style="font-size:1.7rem">数字员工控制台</h1>
+            <div class="eyebrow" style="margin-bottom:6px">My Agent Console · Multi-Agent</div>
+            <h1 style="font-size:1.7rem">我的 Agent 控制台</h1>
           </div>
           <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
             <div style="border:1px solid rgba(232,163,61,.4);border-radius:10px;padding:8px 16px;font-family:var(--mono);font-size:.85rem;color:var(--accent)">{{ credits.toLocaleString() }} 积分</div>

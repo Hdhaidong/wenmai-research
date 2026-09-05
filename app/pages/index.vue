@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: '跨境电商AI就用 insightmarketplac Agent · 数字员工平台',
-  description: 'insightmarketplac Agent：QM 多 Agent 框架 + New API 数据市场分开部署的跨境电商 AI 数字员工平台。首批 20 个 Agent 产品（市场调研、选品、竞品监控、打单、Listing、上架、图片、运营、客服、培训、达人IP开发、内容开发）。个人整体免费，企业版邮件咨询。',
+  title: '跨境电商AI就用 insightmarketplac Agent · Agent平台',
+  description: 'insightmarketplac Agent：自研多智能体引擎独立部署的跨境电商 AI Agent平台。首批 20 个 Agent 产品（市场调研、选品、竞品监控、打单、Listing、上架、图片、运营、客服、培训、达人IP开发、内容开发）。个人整体免费，企业版邮件咨询。',
   ogTitle: '跨境电商AI就用 insightmarketplac Agent',
-  ogDescription: 'QM 多 Agent 框架 + New API 数据市场，20 个 Agent 产品进入真实业务。'
+  ogDescription: '自研多智能体引擎独立部署，20 个 Agent 产品进入真实业务。'
 })
 </script>
 
@@ -15,23 +15,22 @@ useSeoMeta({
       <div class="wrap">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow">QM Multi-Agent · AI Digital Workforce</div>
+            <div class="eyebrow">Multi-Agent · AI Digital Workforce</div>
             <h1>跨境电商AI<br>就用 <span class="hl">insightmarketplac</span> Agent</h1>
-            <p class="hero-sub">QM 多 Agent 框架独立部署驱动数字员工，数据市场按需供给数据口粮——<span style="color:var(--accent);font-weight:600">个人整体免费</span>，从取数、理解和创作，到权限内执行、经验沉淀与企业治理，把 AI 放进完整业务链路。</p>
+            <p class="hero-sub">自研多智能体引擎独立部署驱动 Agent——<span style="color:var(--accent);font-weight:600">个人整体免费</span>，从取数、理解和创作，到权限内执行、经验沉淀与企业治理，把 AI 放进完整业务链路。</p>
             <div class="cta-row">
               <NuxtLink to="/console" class="btn btn-p btn-lg">免费下载客户端</NuxtLink>
-              <NuxtLink to="/data" class="btn btn-s btn-lg">逛逛数据市场</NuxtLink>
             </div>
             <div class="hero-stats">
               <div class="hstat"><div class="v">20</div><div class="k">Agent 产品首批阵容</div></div>
               <div class="hstat"><div class="v">131</div><div class="k">数据 Skill</div></div>
-              <div class="hstat"><div class="v">24</div><div class="k">数据市场数据源</div></div>
+              <div class="hstat"><div class="v">30+</div><div class="k">全球电商平台</div></div>
               <div class="hstat"><div class="v">5min</div><div class="k">出一份调研报告</div></div>
             </div>
           </div>
           <div class="hero-visual">
-            <img src="/assets/hero-dashboard.jpg" alt="insightmarketplac Agent 数字员工客户端界面">
-            <div class="cap">DIGITAL EMPLOYEE CONSOLE · QM MULTI-AGENT</div>
+            <img src="/assets/hero-dashboard.jpg" alt="insightmarketplac Agent 我的 Agent 客户端界面">
+            <div class="cap">MY AGENT CONSOLE · MULTI-AGENT</div>
           </div>
         </div>
         <div class="scen">
@@ -47,7 +46,7 @@ useSeoMeta({
       <div class="wrap">
         <div class="sec-head">
           <div class="eyebrow">Core Capabilities</div>
-          <h2>六大核心能力，<br>让数字员工进入真实业务</h2>
+          <h2>六大核心能力，<br>让Agent进入真实业务</h2>
           <p class="sec-sub">从取数、理解和创作，到权限内执行、经验沉淀与企业治理，insightmarketplac Agent 把 AI 放进完整业务链路。</p>
         </div>
         <div class="cap-grid">
@@ -118,7 +117,7 @@ useSeoMeta({
         <div class="sec-head">
           <div class="eyebrow">US 6 Platforms · Research / Competitor / Ads</div>
           <h2>美国 6 大平台，<br>调研 · 竞品 · 广告全覆盖</h2>
-          <p class="sec-sub">QM 统一调度数据 Skill：一套调研流程，同时跑通 6 个平台的市场容量、竞品结构、广告打法与定价策略。</p>
+          <p class="sec-sub">引擎统一调度数据 Skill：一套调研流程，同时跑通 6 个平台的市场容量、竞品结构、广告打法与定价策略。</p>
         </div>
         <div class="plat-grid">
           <div class="plat"><div class="pn">Amazon</div><div class="pe">US · 核心</div><div class="pd">类目调研 · 竞品监控 · 广告拆解</div></div>
@@ -245,59 +244,41 @@ useSeoMeta({
     <section>
       <div class="wrap">
         <div class="sec-head">
-          <div class="eyebrow">Architecture · QM + New API</div>
-          <h2>QM 多 Agent 框架独立部署，<br>New API 数据网关单独供给</h2>
-          <p class="sec-sub">执行与数据彻底分离：QM Agent 服务器管任务执行，数据市场（New API 网关）管数据供给——两套独立服务器分开部署、分开扩容，挂了互不影响。</p>
+          <div class="eyebrow">Architecture · Multi-Agent Engine</div>
+          <h2>自研多智能体引擎，<br>独立部署驱动每个 Agent</h2>
+          <p class="sec-sub">每个 Agent、每个任务独立沙箱与记忆；执行、审批与经验沉淀全部收敛在引擎内，独立服务器部署、可私有化。</p>
         </div>
         <div class="cap-grid">
           <div class="cap">
-            <span class="cn">Q</span>
-            <h3>QM · 多 Agent 框架</h3><span class="en">YC Open-Source Quartermaster</span>
-            <p>采用 YC 开源的 QM（Quartermaster）多人 Agent 操作系统：每员工、每任务独立沙箱与记忆，独立服务器部署，20 个 Agent 产品并行协作。</p>
+            <span class="cn">01</span>
+            <h3>独立沙箱执行</h3><span class="en">Sandboxed Execution</span>
+            <p>每个 Agent、每个任务都在独立沙箱与记忆中执行，互不干扰，任务经验可沉淀、可复用。</p>
             <div class="mini">
-              <div class="mt">框架能力</div>
-              <div class="row"><span class="pill g">独立沙箱</span><span class="pill g">任务编排</span><span class="pill g">审批门 L0-L3</span><span class="pill g">经验沉淀</span></div>
+              <div class="mt">执行能力</div>
+              <div class="row"><span class="pill g">任务编排</span><span class="pill g">工具调用</span><span class="pill g">报告生成</span><span class="pill g">经验沉淀</span></div>
             </div>
           </div>
           <div class="cap">
-            <span class="cn">N</span>
-            <h3>New API · 数据网关</h3><span class="en">Data Marketplace Gateway</span>
-            <p>数据市场以 New API 为底座独立部署：24 个数据源统一接入，渠道管理、令牌分发、额度风控——个人免费调用，企业按需定制。</p>
+            <span class="cn">02</span>
+            <h3>审批门管控</h3><span class="en">Approval Gates</span>
+            <p>读操作自动执行，写操作分级审批：按店铺、按操作配置授权范围，敏感动作全程留痕。</p>
             <div class="mini">
-              <div class="mt">网关能力</div>
-              <div class="row"><span class="pill">按量计费</span><span class="pill">Token 分发</span><span class="pill">额度控制</span><span class="pill">用量归因</span></div>
+              <div class="mt">权限分级</div>
+              <div class="row"><span class="pill g">L0 只读</span><span class="pill g">L1 提醒</span><span class="pill g">L2 审批</span><span class="pill g">L3 禁止</span></div>
             </div>
           </div>
           <div class="cap">
-            <span class="cn">⇄</span>
-            <h3>分开部署</h3><span class="en">Separate Deployment</span>
-            <p>QM Agent 服务器与数据市场是两套独立部署：Agent 管执行、数据市场管供给，各自扩容互不影响；企业版可整体私有化进内网。</p>
+            <span class="cn">03</span>
+            <h3>独立部署</h3><span class="en">Independent Deployment</span>
+            <p>智能体服务器独立部署、独立扩容；企业版可整体私有化进内网，数据不出域。</p>
             <div class="mini">
               <div class="mt">交付形态</div>
-              <div class="flow"><b>Agent 服务器</b>：QM 框架 · 独立部署 · 可私有化<br><b>数据市场</b>：New API 网关 · 独立部署 · 按量计费</div>
+              <div class="flow"><b>托管版</b>：平台统一运维 · 注册即用<br><b>私有化</b>：整体进内网 · 数据不出域</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="eyebrow">Data Subscription</div>
-          <h2>数据市场订阅数据，<br>数字员工的数据口粮</h2>
-          <p class="sec-sub">个人整体免费：24 个数据源一个 Token 全通，个人调用不扣费；企业团队共享与专属渠道邮件咨询——详见<NuxtLink to="/data">数据市场</NuxtLink>。</p>
-        </div>
-        <div class="img-factory">
-          <div class="if-card"><span class="ic">🛒</span><h4>电商行情数据</h4><p>Amazon / Walmart / Target / Best Buy / TikTok Shop / Temu 类目、销量、价格、关键词按量订阅</p></div>
-          <div class="if-card"><span class="ic">📱</span><h4>社媒 VOC 数据</h4><p>Reddit / YouTube / TikTok / Instagram 达人内容与评论数据流，热点与痛点持续订阅</p></div>
-          <div class="if-card"><span class="ic">🏭</span><h4>供应链数据</h4><p>1688 / 工厂产能与价格数据，热点验证后一键核价</p></div>
-          <div class="if-card"><span class="ic">🔁</span><h4>按量计费</h4><p>¥0.02/次起，购买数据包自动生成账号与 Token，余额预警随时停订</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    </section>    <section>
       <div class="wrap">
         <div class="sec-head">
           <div class="eyebrow">Why Us</div>
@@ -313,7 +294,7 @@ useSeoMeta({
           <div class="mx us good">
             <div class="mxt"><span class="quads"><span class="q on"></span><span class="q on"></span></span><h3>insightmarketplac Agent</h3></div>
             <div class="mxl">AI 智能 × 跨境电商</div>
-            <ul><li>跨境数据网络 30+ 平台</li><li>专业 Skill 市场 131 技能</li><li>店铺环境 · ERP 权限隔离</li><li>数字员工进入真实业务</li></ul>
+            <ul><li>跨境数据网络 30+ 平台</li><li>专业 Skill 市场 131 技能</li><li>店铺环境 · ERP 权限隔离</li><li>Agent进入真实业务</li></ul>
           </div>
           <div class="mx bad">
             <div class="mxt"><span class="quads"><span class="q"></span><span class="q on"></span></span><h3>传统 RPA</h3></div>
@@ -333,10 +314,10 @@ useSeoMeta({
       <div class="wrap">
         <div class="sec-head">
           <div class="eyebrow">Customers</div>
-          <h2>数字员工，已经进入业务现场</h2>
+          <h2>Agent，已经进入业务现场</h2>
         </div>
         <div class="case-band">
-          <div class="case-visual"><img src="/assets/case-customs.jpg" alt="物流专员通过数字员工自动生成报关单"></div>
+          <div class="case-visual"><img src="/assets/case-customs.jpg" alt="物流专员通过Agent自动生成报关单"></div>
           <div class="case-info">
             <span class="cs-tag">福建亿级大卖 · 物流自动化 · 01 / 01</span>
             <h3>用 insightmarketplac Agent 自动生成多货代报关单</h3>
@@ -358,13 +339,13 @@ useSeoMeta({
         <div class="sec-head">
           <div class="eyebrow">Pricing</div>
           <h2>个人整体免费，企业邮件咨询</h2>
-          <p class="sec-sub">个人用户免费使用全部能力：20 个 Agent 产品、131 个数据 Skill 与数据市场调用。企业版按团队规模与部署形态定制，客服邮件一对一咨询。</p>
+          <p class="sec-sub">个人用户免费使用全部能力：20 个 Agent 产品、131 个数据 Skill。企业版按团队规模与部署形态定制，客服邮件一对一咨询。</p>
         </div>
         <div class="price-grid">
           <div class="price hot">
             <div class="pt">个人版 · 整体免费</div><div class="pd">Windows / macOS · 免费下载</div>
             <div class="amount">¥0</div><div class="per">永久免费 · 不限设备 · 无需订阅</div>
-            <ul><li>20 个 Agent 产品全部解锁</li><li>131 个数据 Skill 免费调用</li><li>数据市场 24 个数据源免费使用</li><li>本地任务与图片生成免费</li></ul>
+            <ul><li>20 个 Agent 产品全部解锁</li><li>131 个数据 Skill 免费调用</li><li>本地任务与图片生成免费</li></ul>
             <NuxtLink to="/console" class="btn btn-p">免费下载客户端</NuxtLink>
           </div>
           <div class="price">
@@ -374,9 +355,9 @@ useSeoMeta({
             <a href="mailto:support@insightmarketplac.com" class="btn btn-s">邮件咨询</a>
           </div>
           <div class="price">
-            <div class="pt">独立部署 / 私有化</div><div class="pd">QM + New API 分开部署</div>
+            <div class="pt">独立部署 / 私有化</div><div class="pd">引擎独立部署 · 可私有化</div>
             <div class="amount" style="font-size:1.5rem">定制报价</div><div class="per">邮件咨询 · 工作日 24h 内回复</div>
-            <ul><li>QM Agent 服务器独立部署</li><li>数据市场（New API 网关）独立部署</li><li>私有化进内网，数据不出域</li><li>ERP 对接 + 专属客户成功经理</li></ul>
+            <ul><li>智能体服务器独立部署</li><li>私有化进内网，数据不出域</li><li>ERP 对接 + 专属客户成功经理</li></ul>
             <a href="mailto:support@insightmarketplac.com" class="btn btn-s">邮件咨询</a>
           </div>
         </div>
@@ -388,7 +369,7 @@ useSeoMeta({
       <div class="wrap">
         <div class="eyebrow" style="margin-bottom:14px">Get Started</div>
         <h2>让人聚焦决策，AI 负责执行</h2>
-        <p>下载客户端，配置 API Key，把第一条真实任务交给数字员工。</p>
+        <p>下载客户端，配置 API Key，把第一条真实任务交给Agent。</p>
         <div class="cta-row" style="justify-content:center">
           <NuxtLink to="/console" class="btn btn-p btn-lg">下载客户端</NuxtLink>
           <NuxtLink to="/skills" class="btn btn-s btn-lg">浏览 Skill 市场</NuxtLink>

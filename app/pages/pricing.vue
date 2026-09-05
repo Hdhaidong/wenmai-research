@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: '定价 · 个人整体免费，企业邮件咨询 | insightmarketplac Agent',
-  description: 'insightmarketplac Agent 定价：个人用户整体免费——客户端、20 个 Agent 产品、131 个数据 Skill 与数据市场调用全部免费使用；企业版（团队共享、QM Agent 服务器与数据市场 New API 网关分开部署、私有化）通过客服邮箱 support@insightmarketplac.com 咨询开通。',
+  description: 'insightmarketplac Agent 定价：个人用户整体免费——客户端、20 个 Agent 产品、131 个数据 Skill 全部免费使用；企业版（团队共享、独立部署、私有化）通过客服邮箱 support@insightmarketplac.com 咨询开通。',
   ogTitle: 'insightmarketplac Agent 定价 · 个人整体免费，企业邮件咨询',
-  ogDescription: '个人用户整体免费使用全部数字员工与数据；企业版邮件咨询，支持分开部署与私有化。'
+  ogDescription: '个人用户整体免费使用全部Agent与数据；企业版邮件咨询，支持分开部署与私有化。'
 })
 </script>
 
@@ -15,7 +15,7 @@ useSeoMeta({
       <div class="wrap">
         <div class="eyebrow">Pricing · Personal Free, Enterprise by Email</div>
         <h1>个人<span class="hl">整体免费</span>，<br>企业<span class="hl">邮件咨询</span></h1>
-        <p class="hero-sub-c">数字员工平台对个人用户<b>整体免费</b>：客户端、20 个 Agent 产品、131 个数据 Skill 与数据市场调用全部免费使用。企业版按团队规模与部署形态定制，<b>客服邮件一对一咨询</b>。</p>
+        <p class="hero-sub-c">Agent平台对个人用户<b>整体免费</b>：客户端、20 个 Agent 产品、131 个数据 Skill 全部免费使用。企业版按团队规模与部署形态定制，<b>客服邮件一对一咨询</b>。</p>
         <div class="hero-cta">
           <NuxtLink to="/console" class="btn btn-p">免费下载客户端</NuxtLink>
           <a href="mailto:support@insightmarketplac.com" class="btn btn-s">企业邮件咨询</a>
@@ -37,11 +37,10 @@ useSeoMeta({
             <div class="per">永久免费 · 不限设备 · 无需订阅</div>
             <div class="credits">20 个 Agent 产品全部解锁</div>
             <ul>
-              <li>11 个已上架数字员工即刻可用</li>
+              <li>11 个已上架Agent即刻可用</li>
               <li>即将上架的 9 个 Agent 同步免费</li>
               <li>131 个数据 Skill 免费调用</li>
-              <li>数据市场 24 个数据源免费使用</li>
-              <li>本地任务与图片生成免费</li>
+                  <li>本地任务与图片生成免费</li>
               <li>飞书 / 钉钉 / 企微 / WPS 一键绑定</li>
             </ul>
             <NuxtLink to="/console" class="btn btn-p">免费下载客户端</NuxtLink>
@@ -65,7 +64,7 @@ useSeoMeta({
           <div class="price">
             <div class="pt">数据也免费吗</div><div class="pd">是，个人数据调用免费</div>
             <div class="amount-row"><span class="amount txt">数据免费</span></div>
-            <div class="per">数据市场 24 个数据源</div>
+            <div class="per">131 个数据 Skill</div>
             <div class="credits">个人使用不扣费</div>
             <ul>
               <li>电商行情 / 研究工具 / 社媒 VOC 全开放</li>
@@ -74,7 +73,7 @@ useSeoMeta({
               <li>用量报表免费开放</li>
               <li>团队共享与专属数据渠道属企业版</li>
             </ul>
-            <NuxtLink to="/data" class="btn btn-s">了解数据市场</NuxtLink>
+            <NuxtLink to="/skills" class="btn btn-s">浏览 Skill 市场</NuxtLink>
           </div>
         </div>
       </div>
@@ -85,7 +84,7 @@ useSeoMeta({
         <div class="pg-head">
           <span class="pg-badge">ENTERPRISE · BY CONSULTATION</span>
           <h2>企业版 · 客服邮件咨询</h2>
-          <p class="sec-sub">企业需求差异大——团队规模、部署形态、数据源范围各不相同，因此不设固定标价：邮件告诉我们你的场景，顾问一对一出方案与报价。企业版可将 QM Agent 服务器与数据市场（New API 网关）分别独立部署，分开扩容互不影响。</p>
+          <p class="sec-sub">企业需求差异大——团队规模、部署形态、数据源范围各不相同，因此不设固定标价：邮件告诉我们你的场景，顾问一对一出方案与报价。企业版可将智能体服务器独立部署、整体私有化，按需扩容。</p>
         </div>
         <div class="price-grid">
           <div class="price ent">
@@ -102,14 +101,13 @@ useSeoMeta({
             <a href="mailto:support@insightmarketplac.com" class="btn btn-s">邮件咨询</a>
           </div>
           <div class="price ent hot">
-            <div class="pt">独立部署版</div><div class="pd">QM + New API 分开部署</div>
+            <div class="pt">独立部署版</div><div class="pd">引擎独立部署 · 可私有化</div>
             <div class="amount-row"><span class="amount txt">定制报价</span></div>
             <div class="per">邮件咨询 · 工作日 24h 内回复</div>
-            <div class="credits">执行与数据彻底分离</div>
+            <div class="credits">独立部署 · 私有化可选</div>
             <ul>
-              <li>QM Agent 服务器独立部署</li>
-              <li>数据市场（New API 网关）独立部署</li>
-              <li>两套服务器分开扩容、互不影响</li>
+              <li>智能体服务器独立部署</li>
+                            <li>两套服务器分开扩容、互不影响</li>
               <li>专属渠道与风控策略</li>
             </ul>
             <a href="mailto:support@insightmarketplac.com" class="btn btn-p">邮件咨询</a>
@@ -120,7 +118,7 @@ useSeoMeta({
             <div class="per">邮件咨询 · 工作日 24h 内回复</div>
             <div class="credits">数据不出域</div>
             <ul>
-              <li>数据市场整体私有化进内网</li>
+              <li>智能体引擎整体私有化部署</li>
               <li>自有数据源与 ERP 直连</li>
               <li>对接企业自有大模型</li>
               <li>专属客户成功经理</li>
@@ -134,7 +132,7 @@ useSeoMeta({
           <p>邮件说明团队规模、店铺数量与期望部署形态，顾问工作日 24 小时内回复方案与报价。</p>
         </div>
         <div class="ent-feats">
-          <div class="ent-feat"><div class="et">Separate Deployment</div><p>QM 多 Agent 框架与数据市场分开部署：Agent 服务器管执行，数据网关管供给，各自扩容互不影响。</p></div>
+          <div class="ent-feat"><div class="et">Independent Deployment</div><p>智能体服务器独立部署、按需扩容，可整体私有化进内网，数据不出域。</p></div>
           <div class="ent-feat"><div class="et">Team Governance</div><p>组织架构、角色权限、部门额度与使用统计，AI 在企业内可控、安全地落地。</p></div>
           <div class="ent-feat"><div class="et">Skill Governance</div><p>员工发布 Skill，管理员审核上架，团队一键复用，沉淀企业方法资产。</p></div>
         </div>
@@ -166,14 +164,14 @@ useSeoMeta({
             <div class="per">顾问一对一出方案</div>
             <ul>
               <li>部署形态建议（共享 / 独立 / 私有化）</li>
-              <li>数据市场接入与渠道方案</li>
+              <li>数据能力与渠道接入方案</li>
             </ul>
           </div>
           <div class="price">
             <div class="pt mono-t">STEP 03</div>
             <div class="pd" style="margin-top:6px">部署开通</div>
             <div class="amount-row"><span class="amount txt">上线运行</span></div>
-            <div class="per">QM Agent 服务器 + 数据市场</div>
+            <div class="per">智能体服务器上线</div>
             <ul>
               <li>两套服务器分开部署、分开验收</li>
               <li>团队账号、权限与专属渠道配置</li>
@@ -190,12 +188,12 @@ useSeoMeta({
           <h2>常见问题</h2>
         </div>
         <div class="faq-grid">
-          <div class="faq-item"><h3>个人真的整体免费吗？</h3><p>是。个人用户免费下载客户端，<b>20 个 Agent 产品、131 个数据 Skill、数据市场调用、图片与文档生成</b>全部免费，没有付费墙，不限设备。</p></div>
-          <div class="faq-item"><h3>个人免费包含数据调用吗？</h3><p>包含。数据市场 24 个数据源（电商行情、研究工具、社媒 VOC、供应链与广告数据）对个人使用免费开放；团队共享与专属数据渠道属于企业版。</p></div>
+          <div class="faq-item"><h3>个人真的整体免费吗？</h3><p>是。个人用户免费下载客户端，<b>20 个 Agent 产品、131 个数据 Skill、图片与文档生成</b>全部免费，没有付费墙，不限设备。</p></div>
+          <div class="faq-item"><h3>个人免费包含数据调用吗？</h3><p>包含。131 个数据 Skill（电商行情、研究工具、社媒 VOC、供应链与广告数据）对个人使用免费开放；团队共享与专属数据渠道属于企业版。</p></div>
           <div class="faq-item"><h3>企业版为什么不标价？</h3><p>企业需求差异大：团队规模、店铺数量、部署形态（共享 / 独立部署 / 私有化）、数据源范围都会影响方案。固定标价反而失真，邮件咨询后一对一报价更准确。</p></div>
           <div class="faq-item"><h3>客服邮箱是什么？多久回复？</h3><p>客服邮箱 <b>support@insightmarketplac.com</b>，工作日 24 小时内回复。邮件中请说明团队规模、店铺数量与期望部署形态。</p></div>
-          <div class="faq-item"><h3>QM Agent 服务器和数据市场是同一套部署吗？</h3><p>不是。多 Agent 框架（QM）与数据市场（New API 网关）是两套独立服务器、分开部署：Agent 服务器管执行，数据市场管数据供给，各自扩容互不影响。企业版可全部私有化。</p></div>
-          <div class="faq-item"><h3>支持私有化部署吗？</h3><p>支持。企业版可将 QM Agent 服务器与数据市场分别私有化部署进内网，自有数据源与模型统一接入，数据不出域。</p></div>
+          <div class="faq-item"><h3>Agent 服务器可以独立部署吗？</h3><p>可以。智能体服务器支持独立部署与整体私有化，自有数据源与模型统一接入，数据不出域，按需扩容。</p></div>
+          <div class="faq-item"><h3>支持私有化部署吗？</h3><p>支持。企业版可将智能体服务器整体私有化部署进内网，自有数据源与模型统一接入，数据不出域。</p></div>
           <div class="faq-item"><h3>写操作安全吗？</h3><p>所有写操作（ERP 改价、平台发布、文件生成）默认经过 L2/L3 审批门，你可以按店铺配置授权范围，敏感操作全程留痕。</p></div>
           <div class="faq-item"><h3>个人版以后会收费吗？</h3><p>不会。个人整体免费是长期策略：个人用户先用起来，企业团队按需付费——企业 Agent 套件推出前，会先行上架发布 20 个岗位 Agent 产品。</p></div>
         </div>

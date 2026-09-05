@@ -26,7 +26,7 @@ useSeoMeta({
     <section style="padding:56px 0">
       <div class="wrap">
         <div class="case-band">
-          <div class="case-visual"><img src="/assets/case-customs.jpg" alt="物流专员通过数字员工自动生成报关单"></div>
+          <div class="case-visual"><img src="/assets/case-customs.jpg" alt="物流专员通过Agent自动生成报关单"></div>
           <div>
             <div class="eyebrow">Background</div>
             <h2 style="font-size:1.5rem;margin-bottom:14px">重复填表，吞掉了物流团队</h2>
@@ -40,11 +40,11 @@ useSeoMeta({
       <div class="wrap">
         <div class="sec-head">
           <div class="eyebrow">Solution</div>
-          <h2>把链路交给数字员工</h2>
+          <h2>把链路交给Agent</h2>
         </div>
         <div class="steps">
           <div class="step"><div class="sn">01</div><h3>模板资产化</h3><p>十数家货代的报关单模板整理成 Skill 资产，字段映射关系一次配置、长期复用。</p></div>
-          <div class="step"><div class="sn">02</div><h3>数据直连</h3><p>打单员通过 QM 直读钉钉多维表格，自动识别当天新增的报关数据。</p></div>
+          <div class="step"><div class="sn">02</div><h3>数据直连</h3><p>打单员直读钉钉多维表格，自动识别当天新增的报关数据。</p></div>
           <div class="step"><div class="sn">03</div><h3>审批门控</h3><p>生成文件属于写操作，先经 L2 审批门：专员在客户端一键确认后才落盘。</p></div>
           <div class="step"><div class="sn">04</div><h3>结果回写</h3><p>报关单生成后自动回传钉钉，并在群内推送完成摘要与异常清单。</p></div>
         </div>
@@ -62,14 +62,14 @@ useSeoMeta({
           <div class="price hot"><div class="pt">人力</div><div class="amount">≈63 小时</div><div class="per">每月节省的填表时间</div></div>
           <div class="price"><div class="pt">准确率</div><div class="amount">100%</div><div class="per">模板字段映射零差错，异常转人工</div></div>
         </div>
-        <p style="color:var(--ink-dim);font-size:.92rem;margin-top:26px;max-width:720px">物流团队的角色从「填表员」变成「异常处理员」：数字员工负责把 90% 以上的常规票处理掉，人只在品名存疑、HS 编码冲突、重量异常时介入。企业还把这套链路沉淀成企业 Skill，新员工入职当天就能使用。</p>
+        <p style="color:var(--ink-dim);font-size:.92rem;margin-top:26px;max-width:720px">物流团队的角色从「填表员」变成「异常处理员」：Agent负责把 90% 以上的常规票处理掉，人只在品名存疑、HS 编码冲突、重量异常时介入。企业还把这套链路沉淀成企业 Skill，新员工入职当天就能使用。</p>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="wrap">
         <h2>同样的链路，也能跑在你的业务里</h2>
-        <p>报关单、调价、上架、监控——把重复劳动交给 QM 数字员工。</p>
+        <p>报关单、调价、上架、监控——把重复劳动交给 Agent。</p>
         <div class="cta-row" style="justify-content:center">
           <NuxtLink to="/console" class="btn btn-p btn-lg">打开控制台</NuxtLink>
           <NuxtLink to="/customers" class="btn btn-s btn-lg">更多案例</NuxtLink>

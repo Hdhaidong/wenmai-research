@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: '企业 AI 赋能',
-  description: 'insightmarketplac Agent 企业 AI 赋能：数字员工接入企业生产环境——店铺后台、ERP、广告后台。权限隔离、审批门控、Skill 资产沉淀与组织治理，让 AI 在企业内可控落地。'
+  description: 'insightmarketplac Agent 企业 AI 赋能：Agent接入企业生产环境——店铺后台、ERP、广告后台。权限隔离、审批门控、Skill 资产沉淀与组织治理，让 AI 在企业内可控落地。'
 })
 </script>
 
@@ -13,7 +13,7 @@ useSeoMeta({
       <div class="wrap">
         <div class="eyebrow">Enterprise AI</div>
         <h1>不是给建议，<br>而是<span class="hl">进后台干活</span></h1>
-        <p class="hero-sub">insightmarketplac Agent 不是又一个通用聊天工具，而是专为跨境电商企业打造的 AI 业务中枢。数字员工真实接入企业的生产环境——店铺后台、ERP、广告后台，真正完成工作。</p>
+        <p class="hero-sub">insightmarketplac Agent 不是又一个通用聊天工具，而是专为跨境电商企业打造的 AI 业务中枢。Agent真实接入企业的生产环境——店铺后台、ERP、广告后台，真正完成工作。</p>
         <div class="cta-row">
           <NuxtLink to="/pricing" class="btn btn-p btn-lg">预约企业演示</NuxtLink>
           <NuxtLink to="/customers" class="btn btn-s btn-lg">看落地案例</NuxtLink>

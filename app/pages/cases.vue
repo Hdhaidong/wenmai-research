@@ -21,7 +21,7 @@ const reports = [
       <div class="wrap">
         <div class="eyebrow">Research Reports</div>
         <h1>5 分钟，<br>出一份<span class="hl">可追溯</span>的调研报告</h1>
-        <p class="hero-sub">QM 调度 131 个数据 Skill，把市场、竞品、网红、VOC、广告、供应链六个视角串成一份报告——每个结论都带数据来源。</p>
+        <p class="hero-sub">智能体引擎调度 131 个数据 Skill，把市场、竞品、网红、VOC、广告、供应链六个视角串成一份报告——每个结论都带数据来源。</p>
         <div class="cta-row">
           <NuxtLink to="/console" class="btn btn-p">立即生成一份</NuxtLink>
           <NuxtLink to="/skills" class="btn btn-s">查看数据 Skill</NuxtLink>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: '达人 IP 与内容业务线 · 三种玩法从孵化到达人分销 | insightmarketplac Agent',
-  description: '达人 IP 与内容业务线玩法指南：素人 IP 孵化、达人分销网络、内容矩阵日更三种玩法，由达人IP开发官、内容开发官、视频剪辑师、达人合作专员 4 个数字员工组成内容流水线。上架后对个人用户免费。',
+  description: '达人 IP 与内容业务线玩法指南：素人 IP 孵化、达人分销网络、内容矩阵日更三种玩法，由达人IP开发官、内容开发官、视频剪辑师、达人合作专员 4 个Agent组成内容流水线。上架后对个人用户免费。',
   ogTitle: '达人 IP 与内容业务线 · 三种玩法',
-  ogDescription: '素人 IP 孵化、达人分销网络、内容矩阵日更——4 个数字员工组成内容流水线，个人免费。'
+  ogDescription: '素人 IP 孵化、达人分销网络、内容矩阵日更——4 个Agent组成内容流水线，个人免费。'
 })
 
 const mailto = 'mailto:support@insightmarketplac.com?subject=%E8%AE%A2%E9%98%85%E4%B8%8A%E6%9E%B6%E9%80%9A%E7%9F%A5%20-%20%E8%BE%BE%E4%BA%BAIP%E4%B8%8E%E5%86%85%E5%AE%B9%E4%B8%9A%E5%8A%A1%E7%BA%BF'
@@ -76,7 +76,7 @@ const playbooks = [
       <div class="wrap">
         <div class="eyebrow">Business Line · Creator &amp; Content</div>
         <h1>达人 IP 与内容业务线<br><span class="hl">三种玩法</span>，一条内容流水线</h1>
-        <p class="hero-sub-c">4 个数字员工组成内容流水线：<b>达人IP开发官</b>定人设、<b>内容开发官</b>出选题脚本、<b>视频剪辑师</b>批量成片、<b>达人合作专员</b>建联分发。素人孵化、达人分销、内容矩阵三种玩法组合使用——<b>上架后对个人用户免费</b>。</p>
+        <p class="hero-sub-c">4 个Agent组成内容流水线：<b>达人IP开发官</b>定人设、<b>内容开发官</b>出选题脚本、<b>视频剪辑师</b>批量成片、<b>达人合作专员</b>建联分发。素人孵化、达人分销、内容矩阵三种玩法组合使用——<b>上架后对个人用户免费</b>。</p>
         <div class="cta-row cta-c">
           <a :href="mailto" class="btn btn-p btn-lg">订阅上架通知</a>
           <a href="#playbooks" class="btn btn-s btn-lg">直接看三种玩法</a>
@@ -95,7 +95,7 @@ const playbooks = [
         <div class="sec-head sec-c">
           <div class="eyebrow">Content Pipeline</div>
           <h2>业务线全景：一条流水线跑完内容全链路</h2>
-          <p class="sec-sub">从选题到达人分销，6 个环节由 4 个数字员工接力完成——每个环节的产出都是下一个环节的输入，数据全程回流。</p>
+          <p class="sec-sub">从选题到达人分销，6 个环节由 4 个Agent接力完成——每个环节的产出都是下一个环节的输入，数据全程回流。</p>
         </div>
         <div class="pipe">
           <div class="pstep"><span class="pn">01</span><span class="pi">🔥</span><b>选题挖掘</b><i>内容开发官</i></div>

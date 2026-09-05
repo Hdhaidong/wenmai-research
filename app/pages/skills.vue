@@ -100,7 +100,7 @@ const filtered = computed(() => {
           <div class="step"><div class="sn">01</div><h3>下载 Skill</h3><p>点击技能卡片的「下载 .zip」，获得 Skill 压缩包。</p></div>
           <div class="step"><div class="sn">02</div><h3>打开控制台</h3><p>进入 insightmarketplac Agent 控制台的 Skill 市场页签。</p></div>
           <div class="step"><div class="sn">03</div><h3>导入安装</h3><p>拖入 zip 或点击「导入本地 Skill」完成安装。</p></div>
-          <div class="step"><div class="sn">04</div><h3>一句话调用</h3><p>对数字员工说「用 Amazon 评论 VOC 分析这个 ASIN」即可。</p></div>
+          <div class="step"><div class="sn">04</div><h3>一句话调用</h3><p>对Agent说「用 Amazon 评论 VOC 分析这个 ASIN」即可。</p></div>
         </div>
       </div>
     </section>
