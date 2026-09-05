@@ -29,6 +29,7 @@ const filtered = computed(() => {
         <div class="cta-row">
           <NuxtLink to="/console" class="btn btn-p">打开控制台使用</NuxtLink>
           <NuxtLink to="/pricing" class="btn btn-s">个人免费 · 看定价</NuxtLink>
+          <a href="mailto:haidong.zhou@outlook.com" class="btn btn-s">客服邮箱</a>
         </div>
       </div>
     </section>
