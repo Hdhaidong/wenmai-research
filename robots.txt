@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /app/
 
-Sitemap: https://hdhaidong.github.io/amazon-product-scout/sitemap.xml
+Sitemap: https://hdhaidong.github.io/wenmai-research/sitemap.xml

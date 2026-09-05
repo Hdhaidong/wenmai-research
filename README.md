@@ -4,7 +4,7 @@
 
 > 调研 · 选品 · 监控 · 打单 · 上架 · 图片制造，让数字员工进入真实业务。
 
-- 在线站点（GitHub Pages）：`https://hdhaidong.github.io/amazon-product-scout/`
+- 在线站点（GitHub Pages）：`https://hdhaidong.github.io/wenmai-research/`
 - Skill 插件目录：[`SKILLS.md`](SKILLS.md) —— 131 个插件，每个都有说明
 - 原仓库作品集（Amazon Product Scout / Hardware Repair Companion / OpenWorker Deck）：[`PORTFOLIO.md`](PORTFOLIO.md)
 
