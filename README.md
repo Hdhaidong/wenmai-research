@@ -1,8 +1,12 @@
-# insightmarketplac Agent
+# 稳卖调研 · insightmarketplac Agent
 
 跨境电商企业的 AI 数字员工平台 —— PI Kernel / OpenWorker 内核驱动。
 
 > 调研 · 选品 · 监控 · 打单 · 上架 · 图片制造，让数字员工进入真实业务。
+
+- 在线站点（GitHub Pages）：`https://hdhaidong.github.io/amazon-product-scout/`
+- Skill 插件目录：[`SKILLS.md`](SKILLS.md) —— 131 个插件，每个都有说明
+- 原仓库作品集（Amazon Product Scout / Hardware Repair Companion / OpenWorker Deck）：[`PORTFOLIO.md`](PORTFOLIO.md)
 
 ## 站点结构（静态宣传站 · 已发布）
 
@@ -43,6 +47,8 @@
 ├── agents/                # 7 个数字员工独立产品介绍页
 ├── assets/                # 图片资源
 ├── data.js                # 131 个 Skill 数据（单一数据源）
+├── SKILLS.md              # Skill 插件目录（每个插件含说明）
+├── PORTFOLIO.md           # 原仓库作品集（OpenWorker 定制 Agent）
 ├── app/                   # Nuxt 3 + Supabase 完整应用（开发中）
 │   ├── pages/console.vue  # 数字员工控制台
 │   └── supabase/schema.sql
