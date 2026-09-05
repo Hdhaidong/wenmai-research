@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+
+Sitemap: https://hdhaidong.github.io/insightagent/sitemap.xml
