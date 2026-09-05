@@ -21,7 +21,7 @@ const reports = [
       <div class="wrap">
         <div class="eyebrow">Research Reports</div>
         <h1>5 分钟，<br>出一份<span class="hl">可追溯</span>的调研报告</h1>
-        <p class="hero-sub">PI Kernel 调度 131 个数据 Skill，把市场、竞品、网红、VOC、广告、供应链六个视角串成一份报告——每个结论都带数据来源。</p>
+        <p class="hero-sub">QM 调度 131 个数据 Skill，把市场、竞品、网红、VOC、广告、供应链六个视角串成一份报告——每个结论都带数据来源。</p>
         <div class="cta-row">
           <NuxtLink to="/console" class="btn btn-p">立即生成一份</NuxtLink>
           <NuxtLink to="/skills" class="btn btn-s">查看数据 Skill</NuxtLink>
@@ -55,8 +55,8 @@ const reports = [
     <section class="cta-band">
       <div class="wrap">
         <h2>你的下一个选品决策，交给数据</h2>
-        <p>开通会员，用一句话生成六视角调研报告。</p>
-        <NuxtLink to="/pricing" class="btn btn-p btn-lg">开通会员</NuxtLink>
+        <p>免费使用，用一句话生成六视角调研报告。</p>
+        <NuxtLink to="/console" class="btn btn-p btn-lg">免费下载客户端</NuxtLink>
       </div>
     </section>
 

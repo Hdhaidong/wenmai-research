@@ -19,7 +19,7 @@ const cases = [
       <div class="wrap">
         <div class="eyebrow">Customers</div>
         <h1>数字员工，<br>已经进入<span class="hl">业务现场</span></h1>
-        <p class="hero-sub">从报关单自动化到网红调研选品，看跨境企业如何让 PI Kernel 数字员工接管重复劳动。</p>
+        <p class="hero-sub">从报关单自动化到网红调研选品，看跨境企业如何让 QM 数字员工接管重复劳动。</p>
       </div>
     </section>
 
@@ -44,7 +44,7 @@ const cases = [
           <div v-if="c.img" style="border:1px solid var(--hairline);border-radius:14px;overflow:hidden">
             <img :src="c.img" :alt="c.title" style="width:100%">
           </div>
-          <div v-else style="border:1px dashed var(--hairline);border-radius:14px;height:100%;min-height:220px;display:flex;align-items:center;justify-content:center;background:var(--bg-2);font-family:var(--mono);font-size:.7rem;color:var(--ink-faint);letter-spacing:.14em;text-align:center;padding:20px">PI KERNEL<br>LIVE EXECUTION</div>
+          <div v-else style="border:1px dashed var(--hairline);border-radius:14px;height:100%;min-height:220px;display:flex;align-items:center;justify-content:center;background:var(--bg-2);font-family:var(--mono);font-size:.7rem;color:var(--ink-faint);letter-spacing:.14em;text-align:center;padding:20px">QM MULTI-AGENT<br>LIVE EXECUTION</div>
         </div>
       </div>
     </section>
@@ -52,9 +52,9 @@ const cases = [
     <section class="cta-band">
       <div class="wrap">
         <h2>你的业务现场，也该有数字员工</h2>
-        <p>注册开通，把第一条真实任务交给 PI Kernel。</p>
+        <p>注册即用，把第一条真实任务交给 QM 数字员工。</p>
         <div class="cta-row" style="justify-content:center">
-          <NuxtLink to="/pricing" class="btn btn-p btn-lg">开通会员</NuxtLink>
+          <NuxtLink to="/console" class="btn btn-p btn-lg">免费下载客户端</NuxtLink>
           <NuxtLink to="/enterprise-ai" class="btn btn-s btn-lg">企业演示</NuxtLink>
         </div>
       </div>

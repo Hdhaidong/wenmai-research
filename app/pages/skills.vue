@@ -28,7 +28,7 @@ const filtered = computed(() => {
         <p class="hero-sub">浏览官方精选能力，下载后直接安装到 insightmarketplac Agent。你的数据 Skill 值得被更多人复用。</p>
         <div class="cta-row">
           <NuxtLink to="/console" class="btn btn-p">打开控制台使用</NuxtLink>
-          <NuxtLink to="/pricing" class="btn btn-s">开通会员</NuxtLink>
+          <NuxtLink to="/pricing" class="btn btn-s">个人免费 · 看定价</NuxtLink>
         </div>
       </div>
     </section>

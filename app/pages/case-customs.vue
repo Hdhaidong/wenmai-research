@@ -44,7 +44,7 @@ useSeoMeta({
         </div>
         <div class="steps">
           <div class="step"><div class="sn">01</div><h3>模板资产化</h3><p>十数家货代的报关单模板整理成 Skill 资产，字段映射关系一次配置、长期复用。</p></div>
-          <div class="step"><div class="sn">02</div><h3>数据直连</h3><p>打单员通过 PI Kernel 直读钉钉多维表格，自动识别当天新增的报关数据。</p></div>
+          <div class="step"><div class="sn">02</div><h3>数据直连</h3><p>打单员通过 QM 直读钉钉多维表格，自动识别当天新增的报关数据。</p></div>
           <div class="step"><div class="sn">03</div><h3>审批门控</h3><p>生成文件属于写操作，先经 L2 审批门：专员在客户端一键确认后才落盘。</p></div>
           <div class="step"><div class="sn">04</div><h3>结果回写</h3><p>报关单生成后自动回传钉钉，并在群内推送完成摘要与异常清单。</p></div>
         </div>
@@ -69,7 +69,7 @@ useSeoMeta({
     <section class="cta-band">
       <div class="wrap">
         <h2>同样的链路，也能跑在你的业务里</h2>
-        <p>报关单、调价、上架、监控——把重复劳动交给 PI Kernel。</p>
+        <p>报关单、调价、上架、监控——把重复劳动交给 QM 数字员工。</p>
         <div class="cta-row" style="justify-content:center">
           <NuxtLink to="/console" class="btn btn-p btn-lg">打开控制台</NuxtLink>
           <NuxtLink to="/customers" class="btn btn-s btn-lg">更多案例</NuxtLink>

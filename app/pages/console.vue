@@ -2,7 +2,7 @@
 import { SKILLS } from '~/data/skills'
 useSeoMeta({
   title: '数字员工控制台',
-  description: 'insightmarketplac Agent 数字员工控制台：PI Kernel 驱动 8 个数字员工——市场调研、网红选品、竞品情报、广告优化、打单、Listing、上架、图片制造。'
+  description: 'insightmarketplac Agent 数字员工控制台：QM 多 Agent 框架驱动 11 个数字员工——市场调研、选品、竞品监控、广告、打单、Listing、上架、图片、运营、客服、培训。'
 })
 
 type Tpl = { id: string; name: string; desc: string; cost: number; steps: number; kind: string; gate?: string }
@@ -89,6 +89,39 @@ const AGENTS: Agent[] = [
       { id: 't1', name: '白底主图批量制造', desc: '抠图 + 阴影 + 排版，一次出全套 SKU 的规范白底图', cost: 100, steps: 4, kind: 'imgwhite' },
       { id: 't2', name: '场景图批量合成', desc: '按目标市场家居/户外/节日场景批量合成', cost: 160, steps: 4, kind: 'imgscene' }
     ]
+  },
+  {
+    id: 'ops', icon: '📊', name: '运营总监', role: 'Operations Agent',
+    desc: '店铺日常运营驾驶舱：多平台销售/广告/库存数据每日汇总，指标异常定位到具体 SKU 与根因，输出次日行动清单。',
+    chips: ['多店铺看板', '异动归因', '补货建议', '日报推送'],
+    skills: ['wenmai-sellersprite-market-research', 'wenmai-keepa-product-history', 'wenmai-amazon-competitive-intelligence-monitor'],
+    templates: [
+      { id: 't1', name: '店铺运营日报', desc: '汇总 6 平台销售、广告、库存与利润指标，异常自动归因', cost: 140, steps: 5, kind: 'opsdaily' },
+      { id: 't2', name: '补货计划生成', desc: '按销售速度、FBA 库存与海运周期计算补货量与下单时点', cost: 180, steps: 5, kind: 'restock' },
+      { id: 't3', name: '利润健康度体检', desc: '逐 SKU 拆解售价、费用、退货率，找出利润黑洞', cost: 220, steps: 5, kind: 'profitcheck' }
+    ]
+  },
+  {
+    id: 'cs', icon: '💬', name: '客服专员', role: 'Customer Service Agent',
+    desc: '跨境客服自动化：买家邮件与差评分类应答，退货纠纷按平台政策生成处理方案，多语言回复模板一键生成。',
+    chips: ['邮件分类应答', '差评处理', '退货纠纷', '多语言回复'],
+    skills: ['wenmai-amazon-reviews', 'wenmai-alpha-reddit-scraper-search-fast'],
+    templates: [
+      { id: 't1', name: '客服邮件批量应答', desc: '按问题类型分类 200 封邮件，生成个性化回复草稿', cost: 120, steps: 4, kind: 'mailreply' },
+      { id: 't2', name: '差评挽回处理', desc: '分析 1-3 星差评根因，生成挽回话术与改进工单', cost: 150, steps: 5, kind: 'reviewsave' },
+      { id: 't3', name: '退货纠纷处理方案', desc: '按平台政策生成退款/换货/部分退款方案，附成本测算', cost: 130, steps: 4, kind: 'refund', gate: 'L2' }
+    ]
+  },
+  {
+    id: 'trainer', icon: '🎓', name: '培训教练', role: 'Training Agent',
+    desc: '企业知识培训流水线：把 SOP、产品资料与平台政策变成结构化课程、考核题库与上岗手册，新员工培训周期从 2 周压到 3 天。',
+    chips: ['SOP 课程化', '考核题库', '上岗手册', '政策更新追踪'],
+    skills: ['wenmai-amazon-product-research-standard', 'wenmai-sellersprite-market-research'],
+    templates: [
+      { id: 't1', name: '岗位 SOP 课程生成', desc: '上传 SOP 与产品资料，生成结构化课程 + 考核题库', cost: 200, steps: 5, kind: 'sopcourse' },
+      { id: 't2', name: '新人上岗手册', desc: '按岗位（运营/客服/物流）生成 7 天上岗路径与检查清单', cost: 160, steps: 4, kind: 'onboard' },
+      { id: 't3', name: '平台政策周报', desc: '追踪 6 平台政策变更，输出培训补充材料与影响评估', cost: 100, steps: 4, kind: 'policywk' }
+    ]
   }
 ]
 
@@ -106,7 +139,7 @@ const sbReady = ref(false)
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms))
 
 function stepLines(kind: string): string[] {
-  const base = ['PI Kernel · 解析任务意图', '调度数据 Skill 网络', '并行拉取多源数据', '交叉验证与结构化']
+  const base = ['QM · 解析任务意图', '调度数据 Skill 网络', '并行拉取多源数据', '交叉验证与结构化']
   const extra: Record<string, string> = {
     research6: ['生成 6 平台对比矩阵', '输出 Go/No-Go 结论'],
     asin: ['反查流量词与竞品池', '生成深度调研报告'],
@@ -124,7 +157,16 @@ function stepLines(kind: string): string[] {
     pubozon: ['俄语翻译与本地化', 'FBO/FBS 属性填写', '⚠ 写操作：进入 L2 审批门'],
     pubwb: ['生成 WB 规格表', '尺码与供货价映射', '⚠ 写操作：进入 L2 审批门'],
     imgwhite: ['抠图 + 阴影渲染', '导出 3000×3000'],
-    imgscene: ['匹配场景素材库', '批量合成 12 张']
+    imgscene: ['匹配场景素材库', '批量合成 12 张'],
+    opsdaily: ['汇总 6 平台销售/广告/库存', '指标异动归因', '生成次日行动清单'],
+    restock: ['计算销售速度与安全库存', '叠加海运周期 32 天', '生成补货下单计划'],
+    profitcheck: ['逐 SKU 费用拆解', '定位利润黑洞', '输出整改建议'],
+    mailreply: ['邮件意图分类', '匹配平台政策模板', '生成个性化回复草稿'],
+    reviewsave: ['差评根因聚类', '生成挽回话术', '创建改进工单'],
+    refund: ['核对平台退货政策', '测算三种方案成本', '⚠ 写操作：进入 L2 审批门'],
+    sopcourse: ['解析 SOP 与产品资料', '生成课程大纲', '产出考核题库'],
+    onboard: ['按岗位拆解 7 天路径', '生成检查清单'],
+    policywk: ['扫描 6 平台政策变更', '评估业务影响', '输出培训补充材料']
   }
   return [...base, ...(extra[kind] || ['生成报告'])]
 }
@@ -152,7 +194,16 @@ function renderResult(kind: string): string {
     case 'pubwb': return wrap('野莓规格表 · 20 SKU', k('20', '规格行', '尺码映射完成') + k('xlsx', '导出格式', '可直接上传'), tbl(['字段', '示例值'], [['Предмет', 'Машинка для стрижки'], ['Комплектация', 'Машинка, 6 насадок, щётка'], ['Сезон', 'Круглогодичный']]))
     case 'imgwhite': return wrap('白底主图 · 全套 SKU', k('20 张', '3000×3000', '规范白底') + k('100', '积分消耗', '5 张/SKU'), tbl(['SKU', '处理', '输出'], [['PG-TRIM-01', '抠图 + 柔和阴影 + 居中排版', 'PG-TRIM-01-W.jpg'], ['PG-TRIM-02', '抠图 + 柔和阴影 + 居中排版', 'PG-TRIM-02-W.jpg']]))
     case 'imgscene': return wrap('场景图批量合成', k('12 张', '场景图', '家居/户外/节日'), tbl(['场景', '素材匹配', '输出'], [['美式客厅', '沙发 + 宠物 + 暖光', 'scene-livingroom-01.jpg'], ['户外草坪', '金毛 + 草地 + 逆光', 'scene-outdoor-01.jpg'], ['节日礼盒', '圣诞礼盒 + 宠物帽', 'scene-holiday-01.jpg']]))
-    default: return wrap('任务完成', k('完成', '执行成功', 'PI Kernel'))
+    case 'opsdaily': return wrap('店铺运营日报 · ' + new Date().toLocaleDateString('zh-CN'), k('$38.6K', '6 平台销售额', '环比 +12%') + k('14.2%', '广告占比', '健康区间') + k('3', '异动指标', '已归因'), tbl(['指标', '数值', '环比', '归因'], [['Amazon 销售额', '$26.1K', '+9%', '核心词排名上升 3 位'], ['Walmart 销售额', '$6.8K', '+31%', 'WFS 流量扶持生效'], ['退货率', '3.8%', '+1.2pp', 'PG-LITE-EU 尺码不符集中'], ['库存周转', '42 天', '-6 天', '促销消耗快于补货']]), '次日行动：① PG-LITE-EU 尺码表更新 ② 补货单审批（见补货计划）③ 差评回复清零。日报已推送飞书「运营中心」群。')
+    case 'restock': return wrap('补货计划 · 未来 60 天', k('8 个', '补货 SKU', '建议下单') + k('3,200 件', '补货总量', '分 3 批'), tbl(['SKU', '日均销量', 'FBA 可售天数', '建议'], [['PG-TRIM-01', '112', '19 天', '立即下单 1,400 件'], ['PG-COMBO-A', '68', '26 天', '本周下单 800 件'], ['PG-CABLE-03', '204', '11 天', '⚠ 紧急：空运 300 件 + 海运 900 件']]), '已叠加海运周期 32 天 + 旺季缓冲 15 天；PG-CABLE-03 建议空运补桥接库存，避免断货跌排名。')
+    case 'profitcheck': return wrap('利润健康度体检 · 42 SKU', k('31%', '平均毛利率', '健康') + k('5 个', '利润黑洞 SKU', '需整改') + k('$1.2K', '月度可挽回', '整改后'), tbl(['SKU', '毛利率', '问题', '整改建议'], [['PG-LITE-EU', '8%', '退货率 11% + 仓储费超期', '清仓退出或换尺码厂'], ['PG-CABLE-03', '12%', '头程计泡比吃亏', '改包装压缩体积重'], ['PG-HOOD-B', '15%', '退货率 9%', '主图与实物色差修正']]))
+    case 'mailreply': return wrap('客服邮件批量应答 · 200 封', k('200', '邮件分类', '意图识别 98%') + k('186', '自动生成回复', '待人工抽检') + k('14', '转人工', '复杂纠纷'), tbl(['类型', '数量', '回复策略'], [['物流查询', '84', '附追踪号 + 预计送达'], ['产品咨询', '52', '参数表 + 场景推荐'], ['退货申请', '31', '按政策预审 → 生成方案'], ['索赔/纠纷', '14', '转人工 + 历史订单摘要'], ['其他', '19', '模板回复']]), '回复草稿已按类型分组，支持一键批量发送（发送动作走 L2 审批）。')
+    case 'reviewsave': return wrap('差评挽回处理 · 1-3 星 27 条', k('27', '差评分析', '近 30 天') + k('9', '可挽回', '主动联系'), tbl(['根因', '数量', '挽回动作'], [['物流慢', '8', '说明 + 优惠券'], ['尺码不符', '7', '尺码表 + 免费换'], ['质量预期差', '6', '退款或补发'], ['与描述不符', '6', 'Listing 修正工单']]), '已生成 9 条挽回站内信草稿；6 条 Listing 修正建议转交 Listing 工程师工单池。')
+    case 'refund': return wrap('退货纠纷处理 · ORD-88213', k('A2', '推荐方案', '部分退款 35%') + k('$7.0', '挽回成本', 'vs 全退 $19.99'), tbl(['方案', '成本', '平台风险', '买家接受率预估'], [['A1 全额退款退货', '货值+运费 $12.4', '低', '100%'], ['A2 部分退款留货', '$7.0', '低', '72%'], ['A3 换货', '$9.2', '中', '61%']]), '方案 A2 为最优：买家诉求为「噪音略高」非质量缺陷，部分退款留货成本最低且可同步差评风险。执行退款需 L2 审批。')
+    case 'sopcourse': return wrap('SOP 课程生成 · 客服岗', k('12 讲', '结构化课程', '含案例') + k('40 题', '考核题库', '单选+情景') + k('85 分', '上岗线', '自动判卷'), tbl(['模块', '课时', '考核点'], [['平台政策与红线', '2 讲', '禁售词/审核流程'], ['邮件回复规范', '3 讲', '响应时限/话术分级'], ['退货纠纷处理', '3 讲', '政策边界/方案选择'], ['差评挽回', '2 讲', '挽回话术/升级条件'], ['系统操作', '2 讲', 'ERP 工单/退款审批']]), '课程已发布企业知识库；新员工完成 12 讲 + 通过考核（85 分）方可上岗处理真实邮件。')
+    case 'onboard': return wrap('新人上岗手册 · 运营岗 7 天路径', k('7 天', '上岗周期', '原 14 天') + k('21 项', '检查清单', '逐项签核'), tbl(['天', '任务', '验收'], [['D1', '平台后台权限开通 + 数据看板认读', '看板指标复述'], ['D2-3', '跟岗 Listing 修改与广告调整', '独立完成 3 条 Listing'], ['D4-5', '补货计算与库存巡检', '补货单通过复核'], ['D6', '差评回复与客服升级判断', '模拟考核 85 分'], ['D7', '独立值班', '带教复核签核']]))
+    case 'policywk': return wrap('平台政策周报 · 第 37 周', k('6', '政策变更', '本周扫描') + k('2', '高影响项', '需动作'), tbl(['平台', '变更', '影响'], [['Amazon', 'FBA 入仓新增 SKU 条码要求', '10/15 前更新贴标 SOP'], ['Walmart', 'WFS 费率调整（小件下调）', 'PG-CABLE 系列利好，重算定价'], ['Target', '无重大变更', '—'], ['Best Buy', '3C 认证清单更新', '复核 2 个 SKU 资质']]), '培训补充材料已生成 2 份，推送至「运营中心」与「物流部」群，纳入新人考核题库。')
+    default: return wrap('任务完成', k('完成', '执行成功', 'QM Agent'))
   }
 }
 
@@ -224,7 +275,7 @@ const activeSkills = computed(() => SKILLS.filter(s => activeAgent.value.skills.
       <div class="wrap">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:26px">
           <div>
-            <div class="eyebrow" style="margin-bottom:6px">Digital Employee Console · PI Kernel</div>
+            <div class="eyebrow" style="margin-bottom:6px">Digital Employee Console · QM Multi-Agent</div>
             <h1 style="font-size:1.7rem">数字员工控制台</h1>
           </div>
           <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">

@@ -46,7 +46,7 @@ async function submit() {
       <div class="wrap" style="max-width:440px">
         <div class="eyebrow">Account</div>
         <h1 style="font-size:2rem;margin-bottom:8px">{{ mode === 'login' ? '登录' : '注册' }} insightmarketplac</h1>
-        <p style="color:var(--ink-dim);font-size:.9rem;margin-bottom:28px">登录后进入数字员工控制台，PI Kernel 为你执行真实业务任务。</p>
+        <p style="color:var(--ink-dim);font-size:.9rem;margin-bottom:28px">登录后进入数字员工控制台，QM 为你执行真实业务任务。</p>
 
         <div v-if="!configured" style="border:1px solid rgba(197,106,106,.4);border-radius:10px;padding:14px 16px;background:rgba(197,106,106,.08);font-size:.82rem;color:var(--ink-dim);margin-bottom:20px">
           Supabase 尚未配置：复制 <code style="font-family:var(--mono);color:var(--accent)">.env.example</code> 为 <code style="font-family:var(--mono);color:var(--accent)">.env</code> 并填写项目地址与 Key，然后在 <code style="font-family:var(--mono);color:var(--accent)">supabase/schema.sql</code> 执行建表。当前可先 <NuxtLink to="/console">以演示模式打开控制台</NuxtLink>。
