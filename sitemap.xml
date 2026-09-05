@@ -4,6 +4,8 @@
   <url><loc>https://hdhaidong.github.io/wenmai-research/skills.html</loc><priority>0.9</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/pricing.html</loc><priority>0.9</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/client.html</loc><priority>0.9</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/data.html</loc><priority>0.9</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/influencer.html</loc><priority>0.9</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/customers.html</loc><priority>0.8</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/case-customs.html</loc><priority>0.8</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/enterprise-ai.html</loc><priority>0.8</priority></url>
@@ -15,4 +17,16 @@
   <url><loc>https://hdhaidong.github.io/wenmai-research/agents/listing.html</loc><priority>0.8</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/agents/publish.html</loc><priority>0.8</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/agents/images.html</loc><priority>0.8</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/ops.html</loc><priority>0.8</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/cs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/trainer.html</loc><priority>0.8</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/sourcing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/inventory.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/analyst.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/compliance.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/localization.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/video.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/content.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/influencer-ip.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/agents/kol.html</loc><priority>0.7</priority></url>
 </urlset>

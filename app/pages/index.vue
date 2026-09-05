@@ -221,7 +221,7 @@ useSeoMeta({
           <div class="de soon"><span class="soon-tag">即将上架</span><div class="av">🎤</div><span class="rn">19 · INFLUENCER IP AGENT</span><h3>达人IP开发官</h3><p>达人 IP 孵化、人设定位、账号矩阵与内容排期规划。</p></div>
           <div class="de soon"><span class="soon-tag">即将上架</span><div class="av">🤝</div><span class="rn">20 · KOL OUTREACH AGENT</span><h3>达人合作专员</h3><p>达人建联、寄样管理、合作履约跟进与效果归因。</p></div>
         </div>
-        <div class="price-more" style="margin-top:26px">20 个 Agent 产品全部对个人用户免费 · 企业 Agent 套件（团队共享与私有部署）即将推出，<a href="mailto:support@insightmarketplac.com">邮件咨询</a></div>
+        <div class="price-more" style="margin-top:26px">20 个 Agent 产品全部对个人用户免费 · <NuxtLink to="/influencer">达人 IP 与内容业务线玩法 →</NuxtLink> · 企业 Agent 套件（团队共享与私有部署）即将推出，<a href="mailto:support@insightmarketplac.com">邮件咨询</a></div>
       </div>
     </section>
 
