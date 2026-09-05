@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: '定价 · 个人整体免费，企业邮件咨询 | insightmarketplac Agent',
-  description: 'insightmarketplac Agent 定价：个人用户整体免费——客户端、20 个 Agent 产品、131 个数据 Skill 全部免费使用；企业版（团队共享、独立部署、私有化）通过客服邮箱 support@insightmarketplac.com 咨询开通。',
+  description: 'insightmarketplac Agent 定价：个人用户整体免费——客户端、20 个 Agent 产品、131 个数据 Skill 全部免费使用；企业版（团队共享、独立部署、私有化）通过客服邮箱 haidong.zhou@outlook.com 咨询开通。',
   ogTitle: 'insightmarketplac Agent 定价 · 个人整体免费，企业邮件咨询',
   ogDescription: '个人用户整体免费使用全部Agent与数据；企业版邮件咨询，支持分开部署与私有化。'
 })
@@ -18,7 +18,7 @@ useSeoMeta({
         <p class="hero-sub-c">Agent平台对个人用户<b>整体免费</b>：客户端、20 个 Agent 产品、131 个数据 Skill 全部免费使用。企业版按团队规模与部署形态定制，<b>客服邮件一对一咨询</b>。</p>
         <div class="hero-cta">
           <NuxtLink to="/console" class="btn btn-p">免费下载客户端</NuxtLink>
-          <a href="mailto:support@insightmarketplac.com" class="btn btn-s">企业邮件咨询</a>
+          <a href="mailto:haidong.zhou@outlook.com" class="btn btn-s">企业邮件咨询</a>
         </div>
       </div>
     </section>
@@ -98,7 +98,7 @@ useSeoMeta({
               <li>企业 Skill 发布 / 审核 / 复用</li>
               <li>用量统计与成本归因</li>
             </ul>
-            <a href="mailto:support@insightmarketplac.com" class="btn btn-s">邮件咨询</a>
+            <a href="mailto:haidong.zhou@outlook.com" class="btn btn-s">邮件咨询</a>
           </div>
           <div class="price ent hot">
             <div class="pt">独立部署版</div><div class="pd">引擎独立部署 · 可私有化</div>
@@ -110,7 +110,7 @@ useSeoMeta({
                             <li>两套服务器分开扩容、互不影响</li>
               <li>专属渠道与风控策略</li>
             </ul>
-            <a href="mailto:support@insightmarketplac.com" class="btn btn-p">邮件咨询</a>
+            <a href="mailto:haidong.zhou@outlook.com" class="btn btn-p">邮件咨询</a>
           </div>
           <div class="price ent">
             <div class="pt">私有化定制</div><div class="pd">整体进内网 · 数据不出域</div>
@@ -123,12 +123,12 @@ useSeoMeta({
               <li>对接企业自有大模型</li>
               <li>专属客户成功经理</li>
             </ul>
-            <a href="mailto:support@insightmarketplac.com" class="btn btn-s">邮件咨询</a>
+            <a href="mailto:haidong.zhou@outlook.com" class="btn btn-s">邮件咨询</a>
           </div>
         </div>
         <div class="mail-band">
           <div class="mb-t">Customer Service Email</div>
-          <a class="mb-mail" href="mailto:support@insightmarketplac.com">support@insightmarketplac.com</a>
+          <a class="mb-mail" href="mailto:haidong.zhou@outlook.com">haidong.zhou@outlook.com</a>
           <p>邮件说明团队规模、店铺数量与期望部署形态，顾问工作日 24 小时内回复方案与报价。</p>
         </div>
         <div class="ent-feats">
@@ -151,7 +151,7 @@ useSeoMeta({
             <div class="pt mono-t">STEP 01</div>
             <div class="pd" style="margin-top:6px">邮件咨询</div>
             <div class="amount-row"><span class="amount txt">一封邮件</span></div>
-            <div class="per">support@insightmarketplac.com</div>
+            <div class="per">haidong.zhou@outlook.com</div>
             <ul>
               <li>说明团队规模与店铺数量</li>
               <li>说明期望部署形态与数据源范围</li>
@@ -191,7 +191,7 @@ useSeoMeta({
           <div class="faq-item"><h3>个人真的整体免费吗？</h3><p>是。个人用户免费下载客户端，<b>20 个 Agent 产品、131 个数据 Skill、图片与文档生成</b>全部免费，没有付费墙，不限设备。</p></div>
           <div class="faq-item"><h3>个人免费包含数据调用吗？</h3><p>包含。131 个数据 Skill（电商行情、研究工具、社媒 VOC、供应链与广告数据）对个人使用免费开放；团队共享与专属数据渠道属于企业版。</p></div>
           <div class="faq-item"><h3>企业版为什么不标价？</h3><p>企业需求差异大：团队规模、店铺数量、部署形态（共享 / 独立部署 / 私有化）、数据源范围都会影响方案。固定标价反而失真，邮件咨询后一对一报价更准确。</p></div>
-          <div class="faq-item"><h3>客服邮箱是什么？多久回复？</h3><p>客服邮箱 <b>support@insightmarketplac.com</b>，工作日 24 小时内回复。邮件中请说明团队规模、店铺数量与期望部署形态。</p></div>
+          <div class="faq-item"><h3>客服邮箱是什么？多久回复？</h3><p>客服邮箱 <b>haidong.zhou@outlook.com</b>，工作日 24 小时内回复。邮件中请说明团队规模、店铺数量与期望部署形态。</p></div>
           <div class="faq-item"><h3>Agent 服务器可以独立部署吗？</h3><p>可以。智能体服务器支持独立部署与整体私有化，自有数据源与模型统一接入，数据不出域，按需扩容。</p></div>
           <div class="faq-item"><h3>支持私有化部署吗？</h3><p>支持。企业版可将智能体服务器整体私有化部署进内网，自有数据源与模型统一接入，数据不出域。</p></div>
           <div class="faq-item"><h3>写操作安全吗？</h3><p>所有写操作（ERP 改价、平台发布、文件生成）默认经过 L2/L3 审批门，你可以按店铺配置授权范围，敏感操作全程留痕。</p></div>
@@ -205,7 +205,7 @@ useSeoMeta({
         <div class="eyebrow" style="margin-bottom:14px">Enterprise Consultation</div>
         <h2>需要团队共享、独立部署或私有化？</h2>
         <p>一封邮件说明你的团队规模与部署期望，顾问工作日 24 小时内回复方案与报价。</p>
-        <a href="mailto:support@insightmarketplac.com" class="btn btn-p">邮件咨询企业版</a>
+        <a href="mailto:haidong.zhou@outlook.com" class="btn btn-p">邮件咨询企业版</a>
         <NuxtLink to="/console" class="btn btn-s" style="margin-left:12px">先免费下载客户端</NuxtLink>
       </div>
     </section>

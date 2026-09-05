@@ -6,7 +6,7 @@ useSeoMeta({
   ogDescription: '素人 IP 孵化、达人分销网络、内容矩阵日更——4 个Agent组成内容流水线，个人免费。'
 })
 
-const mailto = 'mailto:support@insightmarketplac.com?subject=%E8%AE%A2%E9%98%85%E4%B8%8A%E6%9E%B6%E9%80%9A%E7%9F%A5%20-%20%E8%BE%BE%E4%BA%BAIP%E4%B8%8E%E5%86%85%E5%AE%B9%E4%B8%9A%E5%8A%A1%E7%BA%BF'
+const mailto = 'mailto:haidong.zhou@outlook.com?subject=%E8%AE%A2%E9%98%85%E4%B8%8A%E6%9E%B6%E9%80%9A%E7%9F%A5%20-%20%E8%BE%BE%E4%BA%BAIP%E4%B8%8E%E5%86%85%E5%AE%B9%E4%B8%9A%E5%8A%A1%E7%BA%BF'
 
 const playbooks = [
   {
