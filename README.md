@@ -5,7 +5,7 @@
 > 调研 · 选品 · 监控 · 打单 · 上架 · 图片制造，让数字员工进入真实业务。
 
 - 在线站点（GitHub Pages）：`https://hdhaidong.github.io/wenmai-research/`
-- Skill 插件目录：[`SKILLS.md`](SKILLS.md) —— 131 个插件，每个都有说明
+- Skill 插件目录：[`SKILLS.md`](SKILLS.md) —— 140 个插件（含 9 个社区贡献），每个都有说明
 - 原仓库作品集（Amazon Product Scout / Hardware Repair Companion / OpenWorker Deck）：[`PORTFOLIO.md`](PORTFOLIO.md)
 
 ## 站点结构（静态宣传站 · 已发布）
@@ -14,7 +14,7 @@
 |---|---|---|
 | 首页 | `index.html` | 产品介绍：六大能力、7 个数字员工、渠道发布、图片工厂、岗位场景、对比矩阵、定价预览 |
 | 定价 | `pricing.html` | 个人版 3 档（¥49 / ¥199 / ¥499）+ 企业共享版 3 档 + 积分计算器 |
-| Skill 市场 | `skills.html` | 131 个跨境电商数据 Skill，分类筛选 + 搜索 + 四步安装（数据源 `data.js`） |
+| Skill 市场 | `skills.html` | 140 个跨境电商数据 Skill（含 9 个社区贡献），分类筛选 + 搜索 + 四步安装（数据源 `data.js`） |
 | 客户案例 | `customers.html` | 报关单自动化、6 平台调研、竞品监控、三语 Listing、多渠道上架、图片流水线 |
 | 案例详情 | `case-customs.html` | 福建亿级大卖多货代报关单自动化完整案例（月省 63 小时） |
 | 企业 AI 赋能 | `enterprise-ai.html` | 六项服务 + 五步落地路径 + 权限/审批/资产/额度治理 |
@@ -33,12 +33,13 @@
 |---|---|---|
 | 社区首页 | `hub/index.html` | 暗色 Hero + 视频 + 轮播词（Automation / Content / Advertising / Research / Ops） |
 | 社区 | `hub/community.html` | 5 帖 7 板块（广告/选品/内容/运营/数据管道/工作流互评） |
-| Skill Hub | `hub/skills.html` | 9 个可复用 Agent 工作流卡片 |
+| Skill Hub（已合并） | `hub/skills.html` | 社区 Skill 已并入主站 Skill 市场「社区贡献」分类，此页为重定向 |
 | 资讯 | `hub/news.html` | 跨境电商动态按日分组 |
 | 会员计划 | `hub/pricing.html` | 年度会员 + 权益列表 |
 | 关于 | `hub/about.html` | 团队背景 + 企业 Agent 服务 |
 | 登录/注册 | `hub/login.html` 等 | 邮箱密码 + GitHub OAuth（静态演示） |
 | Agent 接入协议 | `hub/agent.md` | 数字员工身份配对、社区/Skill API、同步闭环 |
+> **同类业务合并（2026-09-07）**：hub 导航与主站统一为同一套（首页 / Skill市场 / 选品调研报告 / 社区 / 资讯 / 会员），社区 Skill Hub 的 9 个 Skill 并入主站 `skills.html`「社区贡献」分类，`hub/skills.html` 变为重定向。
 
 ## 7 个自研数字员工（每个都有独立产品介绍页）
 
@@ -65,7 +66,7 @@
 ├── index.html …           # 静态宣传站（已发布）
 ├── agents/                # 数字员工独立产品介绍页
 ├── hub/                   # Agent 社区（吸收自 Sealeap 的社区业务）
-│   ├── index.html …       # 暗色社区首页 / 社区 / Skill Hub / 资讯 / 会员 / 关于
+│   ├── index.html …       # 暗色社区首页 / 社区 / 资讯 / 会员 / 关于（Skill Hub 已并入主站 Skill 市场）
 │   └── agent.md           # Agent 接入协议（API 文档）
 ├── assets/                # 图片资源
 ├── data.js                # 131 个 Skill 数据（单一数据源）

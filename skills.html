@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skill 市场 · 131 个跨境电商数据技能 | insightmarketplac Agent</title>
-<meta name="description" content="insightmarketplac SkillHub：131 个跨境电商数据 Skill，覆盖 Amazon、Walmart、Target、Best Buy、TikTok Shop、Temu、Reddit、1688 等平台。官方精选推荐，下载后直接安装。">
+<title>Skill 市场 · 140 个跨境电商数据技能 | insightmarketplac Agent</title>
+<meta name="description" content="insightmarketplac SkillHub：140 个跨境电商数据 Skill（含 9 个社区贡献），覆盖 Amazon、Walmart、Target、Best Buy、TikTok Shop、Temu、Reddit、1688 等平台。官方精选推荐，下载后直接安装。">
 <meta name="robots" content="index, follow">
 <style>
 :root{--bg:#000;--bg-2:#0A0A0A;--ink:#F2EEE6;--ink-dim:#A7ADB8;--ink-faint:#6E7683;--accent:#E8A33D;--accent-dim:rgba(232,163,61,.12);--hairline:rgba(242,238,230,.12);--hairline-soft:rgba(242,238,230,.07);--sans:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--mono:"SF Mono",Consolas,monospace}
@@ -60,7 +60,7 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft);font-size:.76rem
 <section class="hero"><div class="wrap">
 <div class="eyebrow">SkillHub</div>
 <h1>一句话调出跨境<span class="hl">数据能力</span></h1>
-<p class="hero-sub">浏览官方精选能力，下载后直接安装到 insightmarketplac Agent。数据类 Skill 运行需接入数据源，一次配置全局调用。</p>
+<p class="hero-sub">浏览官方精选能力与社区贡献 Skill，下载后直接安装到 insightmarketplac Agent。数据类 Skill 运行需接入数据源，一次配置全局调用。</p>
 <a href="client.html" class="btn btn-p">打开控制台使用</a>&nbsp;&nbsp;<a href="pricing.html" class="btn btn-s">个人免费 · 看定价</a>&nbsp;&nbsp;<a href="mailto:haidong.zhou@outlook.com" class="btn btn-s">客服邮箱</a>
 </div></section>
 
@@ -74,7 +74,7 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft);font-size:.76rem
 </div></section>
 
 <section><div class="wrap">
-<div class="eyebrow">Explore</div><h2 style="margin-bottom:24px">全部 <span id="total">131</span> 个 Skill</h2>
+<div class="eyebrow">Explore</div><h2 style="margin-bottom:24px">全部 <span id="total">140</span> 个 Skill</h2>
 <div class="filters" id="filters">
 <button class="on" data-c="全部">全部</button>
 <button data-c="选品与开发">选品与开发</button>
@@ -82,6 +82,7 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft);font-size:.76rem
 <button data-c="营销广告">营销广告</button>
 <button data-c="数据分析">数据分析</button>
 <button data-c="通用/热点">通用/热点</button>
+<button data-c="社区贡献">社区贡献</button>
 <input id="q" placeholder="搜索技能名称 / 描述 / 标签…">
 </div>
 <p id="count"></p>
@@ -114,7 +115,7 @@ function render(){
   });
   count.textContent='命中 '+items.length+' 个技能';
   list.innerHTML=items.map(function(s){
-    return '<div class="card"><div class="inner"><div><div class="t">'+esc(s.title)+'</div><div class="d">'+esc(s.desc)+'</div><div class="cats">'+s.cats.map(function(c){return '<span>'+c+'</span>'}).join('')+'</div></div><a class="dl" href="'+s.zip+'" download>下载 .zip</a></div></div>';
+    return '<div class="card"><div class="inner"><div><div class="t">'+esc(s.title)+'</div><div class="d">'+esc(s.desc)+'</div><div class="cats">'+s.cats.map(function(c){return '<span>'+c+'</span>'}).join('')+'</div></div>'+(s.community?'<a class="dl" href="hub/community.html">社区获取</a>':'<a class="dl" href="'+s.zip+'" download>下载 .zip</a>')+'</div></div>';
   }).join('')||'<p style="color:var(--ink-faint);padding:30px 0">没有命中的技能，换个关键词试试。</p>';
 }
 document.getElementById('filters').addEventListener('click',function(e){
