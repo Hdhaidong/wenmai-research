@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill Hub · insightmarketplac</title>
+<meta name="description" content="insightmarketplac Skill Hub —— 跨境电商可复用 Agent Skills。">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="stylesheet" href="assets/css/base.css">
+<style>
+
+.skill-wrap { max-width: 1152px; margin: 0 auto; padding: 64px 16px 96px; }
+.skill-toolbar { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.skill-search { flex: 1; min-width: 220px; }
+.filter-chip { border: 1px solid var(--line-15); border-radius: 999px; padding: 7px 16px; font-size: 13px; color: var(--muted); transition: all .2s; }
+.filter-chip:hover { border-color: rgba(0,0,0,.3); color: var(--fg); }
+.filter-chip.active { background: var(--fg); border-color: var(--fg); color: #fff; }
+.skill-grid { margin-top: 28px; display: grid; gap: 20px; }
+@media (min-width: 768px) { .skill-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .skill-grid { grid-template-columns: repeat(3, 1fr); } }
+.skill-card { border: 1px solid var(--line-12); border-radius: 18px; background: #fff; padding: 20px; display: flex; flex-direction: column; transition: border-color .2s, box-shadow .2s; }
+.skill-card:hover { border-color: rgba(0,0,0,.25); box-shadow: 0 8px 24px -12px rgba(0,0,0,.15); }
+.skill-card .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.skill-card h3 { font-size: 16px; font-weight: 600; line-height: 1.4; }
+.skill-card .slug { margin-top: 2px; font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: var(--muted); }
+.skill-card .desc { margin-top: 12px; font-size: 13.5px; line-height: 1.65; color: var(--muted); flex: 1; }
+.skill-tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.skill-tag { border: 1px solid var(--line-15); border-radius: 999px; padding: 2px 10px; font-size: 11px; color: var(--muted); }
+.skill-tag.paid { border-color: rgba(217,119,6,.35); color: #b45309; background: rgba(245,158,11,.07); }
+.skill-stats { margin-top: 16px; display: flex; align-items: center; gap: 16px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 12px; color: var(--muted); }
+.skill-stats .op { margin-left: auto; display: inline-flex; gap: 6px; }
+.skill-stats .op button { border: 1px solid var(--line-15); border-radius: 8px; padding: 4px 10px; font-size: 12px; color: var(--muted); transition: all .2s; }
+.skill-stats .op button:hover { border-color: rgba(0,0,0,.3); color: var(--fg); }
+.repo-badge { display: inline-flex; align-items: center; gap: 5px; border: 1px solid rgba(94,234,212,.5); background: rgba(94,234,212,.1); color: #0f766e; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="insightmarketplac"><span>insightmarketplac</span></a>
+    <nav class="header-nav">
+      <a href="index.html">首页</a><a href="community.html">社区</a><a href="news.html">资讯</a><a href="skills.html" class="active">Skill Hub</a><a href="pricing.html">加入会员</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="login.html">登录</a>
+      <a class="btn-primary" href="pricing.html">加入会员<svg class="arr" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="10" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></a>
+    </div>
+  </div>
+  <nav class="header-nav-mobile">
+    <a href="index.html">首页</a><a href="community.html">社区</a><a href="news.html">资讯</a><a href="skills.html" class="active">Skill Hub</a><a href="pricing.html">加入会员</a>
+  </nav>
+</header>
+<main>
+<div class="skill-wrap">
+  <div class="page-label">SKILL HUB</div>
+  <h1 class="page-title">跨境电商 Skill Hub</h1>
+  <p class="page-sub">选品、广告、内容与数据分析等可复用 Agent Skills —— 支持 fork、branch、issue 与 PR 的 Git 式协作。</p>
+  <div class="skill-toolbar">
+    <div class="skill-search"><input class="field-input" type="search" placeholder="搜索 Skill 名称、标签或场景……"></div>
+    <button type="button" class="filter-chip active">全部</button>
+    <button type="button" class="filter-chip">免费</button>
+    <button type="button" class="filter-chip">付费</button>
+  </div>
+  <div class="skill-grid">
+    
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>Amazon Ads Patrol</h3>
+          <p class="slug">/amazon-ads-patrol</p>
+        </div>
+        <span class="skill-tag paid">付费</span>
+      </div>
+      <p class="desc">每日巡检 SP/SB/SD 广告：搜索词归类、预算再分配建议、异常 ACOS 归因摘要，输出可执行清单。</p>
+      <div class="skill-tags"><span class="skill-tag">广告</span><span class="skill-tag">SP-API</span></div>
+      <div class="skill-stats">
+        <span>★ 214</span><span>⑂ 56</span><span>◫ 3</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>Review Miner</h3>
+          <p class="slug">/review-miner</p>
+        </div>
+        <span class="skill-tag">免费</span>
+      </div>
+      <p class="desc">抓取竞品评论并提取痛点 / 好评点，映射成 listing 卖点池，支持按星级与关键词过滤。</p>
+      <div class="skill-tags"><span class="skill-tag">选品</span><span class="skill-tag">内容</span></div>
+      <div class="skill-stats">
+        <span>★ 187</span><span>⑂ 41</span><span>◫ 1</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>Listing Batch Writer</h3>
+          <p class="slug">/listing-batch-writer</p>
+        </div>
+        <span class="skill-tag">免费</span>
+      </div>
+      <p class="desc">批量重写五点描述与 A+ 文案：卖点池映射 + compliance 词校验 + 人工复核队列。</p>
+      <div class="skill-tags"><span class="skill-tag">内容</span></div>
+      <div class="skill-stats">
+        <span>★ 156</span><span>⑂ 33</span><span>◫ 5</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>Inventory Guard</h3>
+          <p class="slug">/inventory-guard</p>
+        </div>
+        <span class="skill-tag paid">付费</span>
+      </div>
+      <p class="desc">库存水位监控与补货建议：结合销量增速与备货周期，缺货风险提前预警。</p>
+      <div class="skill-tags"><span class="skill-tag">运营</span></div>
+      <div class="skill-stats">
+        <span>★ 98</span><span>⑂ 22</span><span>◫ 2</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>SP-API Pipeline</h3>
+          <p class="slug">/sp-api-pipeline</p>
+        </div>
+        <span class="skill-tag">免费</span>
+      </div>
+      <p class="desc">SP-API 数据管道模板：分时报表拉取、限流指数退避、增量同步到本地数据库。</p>
+      <div class="skill-tags"><span class="skill-tag">数据</span><span class="skill-tag">MCP</span></div>
+      <div class="skill-stats">
+        <span>★ 132</span><span>⑂ 47</span><span>◫ 7</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>CS Triage Bot</h3>
+          <p class="slug">/cs-triage-bot</p>
+        </div>
+        <span class="skill-tag paid">付费</span>
+      </div>
+      <p class="desc">客服邮件自动分诊：常见物流问题自动回复、差评预警提前触达、复杂问题转人工。</p>
+      <div class="skill-tags"><span class="skill-tag">运营</span></div>
+      <div class="skill-stats">
+        <span>★ 87</span><span>⑂ 18</span><span>◫ 0</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>BSR Tracker</h3>
+          <p class="slug">/bsr-tracker</p>
+        </div>
+        <span class="skill-tag">免费</span>
+      </div>
+      <p class="desc">Best Sellers 榜单监控：7 天增量对比、新晋 ASIN 清单、价格带分布简报。</p>
+      <div class="skill-tags"><span class="skill-tag">选品</span><span class="skill-tag">数据</span></div>
+      <div class="skill-stats">
+        <span>★ 110</span><span>⑂ 25</span><span>◫ 4</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>Workflow Peer Review</h3>
+          <p class="slug">/workflow-peer-review</p>
+        </div>
+        <span class="skill-tag">免费</span>
+      </div>
+      <p class="desc">把你的 Agent 工作流贴进社区，结构化收集反馈：稳定性、成本、边界条件逐项互评。</p>
+      <div class="skill-tags"><span class="skill-tag">工作流</span></div>
+      <div class="skill-stats">
+        <span>★ 76</span><span>⑂ 12</span><span>◫ 6</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+    <article class="skill-card">
+      <div class="top">
+        <div>
+          <h3>Ad Creative Lab</h3>
+          <p class="slug">/ad-creative-lab</p>
+        </div>
+        <span class="skill-tag paid">付费</span>
+      </div>
+      <p class="desc">广告素材批量生成管线：主图变体、SB 视频脚本、社媒切片，按平台规格自动导出。</p>
+      <div class="skill-tags"><span class="skill-tag">广告</span><span class="skill-tag">内容</span></div>
+      <div class="skill-stats">
+        <span>★ 143</span><span>⑂ 37</span><span>◫ 2</span>
+        <span class="op"><button type="button">Fork</button><button type="button">Star</button></span>
+      </div>
+    </article>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><img src="assets/img/logo.svg" alt="insightmarketplac"><span>insightmarketplac</span></div>
+        <p class="footer-desc">AI Native 的跨境电商社区 —— 交流 Agent 与自动化在选品、广告、运营里的真实用法，获取每日跨境资讯与可复用 Skill。</p>
+        <div class="footer-social">
+          <span class="qr-btn" tabindex="0" role="button" aria-label="微信二维码">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"></path></svg>
+            <span class="qr-pop"><img src="qr/wechat.svg" alt="微信"><span>微信</span></span>
+          </span>
+          <span class="qr-btn" tabindex="0" role="button" aria-label="微信公众号二维码">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M168 80c-13.3 0-24 10.7-24 24l0 304c0 8.4-1.4 16.5-4.1 24L440 432c13.3 0 24-10.7 24-24l0-304c0-13.3-10.7-24-24-24L168 80zM72 480c-39.8 0-72-32.2-72-72L0 112C0 98.7 10.7 88 24 88s24 10.7 24 24l0 296c0 13.3 10.7 24 24 24s24-10.7 24-24l0-304c0-39.8 32.2-72 72-72l272 0c39.8 0 72 32.2 72 72l0 304c0 39.8-32.2 72-72 72L72 480zM176 136c0-13.3 10.7-24 24-24l96 0c13.3 0 24 10.7 24 24l0 80c0 13.3-10.7 24-24 24l-96 0c-13.3 0-24-10.7-24-24l0-80zm200-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zM200 272l208 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-208 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80l208 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-208 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"></path></svg>
+            <span class="qr-pop"><img src="qr/mp.svg" alt="微信公众号"><span>微信公众号</span></span>
+          </span>
+          <span class="qr-btn" tabindex="0" role="button" aria-label="小红书二维码">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"></path></svg>
+            <span class="qr-pop"><img src="qr/xiaohongshu.svg" alt="小红书"><span>小红书</span></span>
+          </span>
+          <span class="qr-btn" tabindex="0" role="button" aria-label="抖音二维码">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg>
+            <span class="qr-pop"><img src="qr/douyin.svg" alt="抖音"><span>抖音</span></span>
+          </span>
+          <a class="qr-btn" href="mailto:hello@insightmarketplac.io" title="邮箱" aria-label="邮箱"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg></a>
+        </div>
+      </div>
+      <nav class="footer-col">
+        <span class="footer-col-title">关于</span>
+        <div class="footer-col-links">
+          <a href="about.html">关于站长</a>
+          <a href="agent.md">Agent 接入协议</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 insightmarketplac. 保留所有权利。</span>
+      <a href="#" class="footer-top-link">回到顶部 <span aria-hidden="true">↑</span></a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+
+(function () {
+  var chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); });
+      c.classList.add('active');
+    });
+  });
+})();
+
+</script>
+</body>
+</html>

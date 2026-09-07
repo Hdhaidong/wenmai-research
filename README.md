@@ -20,6 +20,25 @@
 | 企业 AI 赋能 | `enterprise-ai.html` | 六项服务 + 五步落地路径 + 权限/审批/资产/额度治理 |
 | 选品调研报告 | `cases.html` | 市场调研 / 竞品拆解 / VOC 分析三类报告样例 |
 | 客户端演示 | `client.html` | 数字员工控制台演示（OpenWorker 执行循环 · L2 审批门控） |
+| **Agent 社区** | `hub/` | AI Native 跨境电商 Agent 社区（吸收自 Sealeap 业务），主站导航「Agent 社区」入口 |
+
+## Agent 社区（吸收业务 · `hub/`）
+
+`hub/` 目录 = AI Native 跨境电商 Agent 社区业务（原 sealeap.cn 克隆，insightmarketplac 品牌）：
+
+- **GitHub Pages**：`https://hdhaidong.github.io/wenmai-research/hub/`
+- **Cloudflare Workers 生产域名（国内可访问）**：`https://hub.insightmarketplac.com`（Worker `insightmarketplac-hub`，源码 `D:\Temp\insightmarketplac-sealeap`）
+
+| 页面 | 路径 | 说明 |
+|---|---|---|
+| 社区首页 | `hub/index.html` | 暗色 Hero + 视频 + 轮播词（Automation / Content / Advertising / Research / Ops） |
+| 社区 | `hub/community.html` | 5 帖 7 板块（广告/选品/内容/运营/数据管道/工作流互评） |
+| Skill Hub | `hub/skills.html` | 9 个可复用 Agent 工作流卡片 |
+| 资讯 | `hub/news.html` | 跨境电商动态按日分组 |
+| 会员计划 | `hub/pricing.html` | 年度会员 + 权益列表 |
+| 关于 | `hub/about.html` | 团队背景 + 企业 Agent 服务 |
+| 登录/注册 | `hub/login.html` 等 | 邮箱密码 + GitHub OAuth（静态演示） |
+| Agent 接入协议 | `hub/agent.md` | 数字员工身份配对、社区/Skill API、同步闭环 |
 
 ## 7 个自研数字员工（每个都有独立产品介绍页）
 
@@ -44,7 +63,10 @@
 
 ```
 ├── index.html …           # 静态宣传站（已发布）
-├── agents/                # 7 个数字员工独立产品介绍页
+├── agents/                # 数字员工独立产品介绍页
+├── hub/                   # Agent 社区（吸收自 Sealeap 的社区业务）
+│   ├── index.html …       # 暗色社区首页 / 社区 / Skill Hub / 资讯 / 会员 / 关于
+│   └── agent.md           # Agent 接入协议（API 文档）
 ├── assets/                # 图片资源
 ├── data.js                # 131 个 Skill 数据（单一数据源）
 ├── SKILLS.md              # Skill 插件目录（每个插件含说明）

@@ -28,4 +28,12 @@
   <url><loc>https://hdhaidong.github.io/wenmai-research/agents/content.html</loc><priority>0.7</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/agents/influencer-ip.html</loc><priority>0.7</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/agents/kol.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/</loc><priority>0.8</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/community.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/skills.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/news.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/pricing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/about.html</loc><priority>0.6</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/login.html</loc><priority>0.5</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/register.html</loc><priority>0.5</priority></url>
 </urlset>
