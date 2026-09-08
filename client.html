@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>我的 Agent · 跨境电商 AI 工作台 | insightmarketplac Agent</title>
-<meta name="description" content="insightmarketplac 我的 Agent 客户端：选品调研、文案视觉、店铺运营、数据分析四大业务线工作台，20 个 Agent 任务模板一键下达，执行全程可追溯，写操作人工审批。">
+<meta name="description" content="insightmarketplac 我的 Agent 客户端：选品调研、文案视觉、店铺运营、数据分析四大业务线工作台，27 个 Agent 任务模板一键下达，执行全程可追溯，写操作人工审批。">
 <meta name="robots" content="noindex">
 <style>
 :root{--bg:#F4F4F1;--bg-2:#FAFAF8;--card:#FFFFFF;--ink:#1C1C1A;--ink-dim:#5F6470;--ink-faint:#9AA0A8;--accent:#B4791F;--accent-hi:#8F5E13;--accent-dim:rgba(180,121,31,.09);--gold-bg:#FFF8EC;--hairline:rgba(28,28,26,.12);--hairline-soft:rgba(28,28,26,.07);--ok:#2E7D32;--bad:#C62828;--warn:#B26A00;--shadow:0 1px 2px rgba(28,28,26,.05),0 4px 14px rgba(28,28,26,.06);--shadow-hi:0 2px 6px rgba(28,28,26,.08),0 10px 28px rgba(28,28,26,.10);--sans:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;--mono:"SF Mono","Cascadia Code",Consolas,"Courier New",monospace}
@@ -368,6 +368,13 @@ const AGENTS=[
     {id:'t2',name:'关键词排名跟踪',desc:'跟踪指定 ASIN 在关键词下的页面和位置变化，越界告警',cost:100,steps:3,kind:'rank'},
     {id:'t3',name:'促销异动雷达',desc:'监控零售站点促销和商品动态，发现价格波动与活动机会',cost:100,steps:3,kind:'deal'}
   ]},
+{id:'ads',icon:'📈',name:'广告优化师',role:'Ads Agent',wsTag:'亚马逊A店铺运营',
+  templates:[
+    {id:'t1',name:'竞品广告拆解｜看清对手在买什么流量',desc:'拆解竞品 SP/SB/SD 广告位、素材与投放关键词，判断对手的流量买法',cost:400,steps:4,kind:'adspy'},
+    {id:'t2',name:'关键词分层｜核心 · 长尾 · 防御',desc:'按转化意图与竞价压力给广告关键词分层，明确每一层的目标 ACOS',cost:300,steps:3,kind:'adskw'},
+    {id:'t3',name:'广告盈亏模型｜ACOS 与回本测算',desc:'按客单价、毛利率与转化率测算保本 ACOS 与目标 ACOS，判断加码还是收缩',cost:300,steps:3,kind:'adspnl'},
+    {id:'t4',name:'45 天广告推进路线｜SP · SB · SD',desc:'为新品或旺季制定 45 天广告节奏：测词、放量、防守三阶段推进',cost:400,steps:4,kind:'adsroad'}
+  ]},
 {id:'docs',icon:'📄',name:'打单专员',role:'Document Agent',wsTag:'亚马逊A店铺运营',
   templates:[
     {id:'t1',name:'批量报关单制作',desc:'为当天新增报关数据匹配货代模板并批量生成报关单 Excel（参考福建大卖案例：月省 63 小时）',cost:120,steps:5,kind:'customs',gate:'L2'},
@@ -406,7 +413,8 @@ const LINES=[
   {id:'image',name:'产品图片'}]},
 {id:'ops',name:'店铺运营',subs:[
   {id:'publish',name:'多平台上架'},
-  {id:'docs',name:'单证与打单'}]},
+  {id:'docs',name:'单证与打单'},
+  {id:'ads',name:'广告优化'}]},
 {id:'data',name:'数据分析',subs:[
   {id:'monitor',name:'竞品监控'},
   {id:'rank',name:'关键词与排名'}]},
@@ -421,6 +429,7 @@ const CARDS={
 'copy:image':[{a:'images',t:'t1'},{a:'images',t:'t2'},{a:'images',t:'t3'}],
 'ops:publish':[{a:'publish',t:'t1'},{a:'publish',t:'t2'},{a:'publish',t:'t3'},{a:'publish',t:'t4'},{a:'publish',t:'t5'},{a:'publish',t:'t6'}],
 'ops:docs':[{a:'docs',t:'t1'},{a:'docs',t:'t2'}],
+'ops:ads':[{a:'ads',t:'t1'},{a:'ads',t:'t2'},{a:'ads',t:'t3'},{a:'ads',t:'t4'}],
 'data:monitor':[{a:'monitor',t:'t1'},{a:'monitor',t:'t3'}],
 'data:rank':[{a:'monitor',t:'t2'}]
 };

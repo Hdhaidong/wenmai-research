@@ -3,7 +3,6 @@
   <url><loc>https://hdhaidong.github.io/wenmai-research/</loc><priority>1.0</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/skills.html</loc><priority>0.9</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/pricing.html</loc><priority>0.9</priority></url>
-  <url><loc>https://hdhaidong.github.io/wenmai-research/client.html</loc><priority>0.9</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/influencer.html</loc><priority>0.9</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/customers.html</loc><priority>0.8</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/case-customs.html</loc><priority>0.8</priority></url>
@@ -35,4 +34,5 @@
   <url><loc>https://hdhaidong.github.io/wenmai-research/hub/about.html</loc><priority>0.6</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/hub/login.html</loc><priority>0.5</priority></url>
   <url><loc>https://hdhaidong.github.io/wenmai-research/hub/register.html</loc><priority>0.5</priority></url>
+  <url><loc>https://hdhaidong.github.io/wenmai-research/hub/forgot-password.html</loc><priority>0.5</priority></url>
 </urlset>
